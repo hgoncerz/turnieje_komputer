@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #377db8;
+}
+.navbar .links {
+  margin-left: auto;
+  cursor: pointer;
+  user-select: none;
+}
+
+.links-content {
+  top: 8%;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  padding: 10px;
+  width: 17%;
+  cursor: pointer;
+}
+.links-content .links-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.links-content .links-item:hover {
+  background: #f4f4f4;
+}
+.links-btn {
+  padding: 15px 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #377db8;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.turnieje-wyglad {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.turnieje-wyglad:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.turnieje-wyglad h2 {
+  font-size: 20px;
+  color: #377db8;
+  margin-bottom: 8px;
+}
+.turnieje-wyglad a {
+  text-decoration: none;
+}
+.nowyTurniej {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.nowyTurniej label {
+  text-align: left;
+  display: block;
+}
+.nowyTurniej input,
+.nowyTurniej textarea {
+  width: 300px;
+  padding: 3px 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.nowyTurniej button {
+  background: #377db8;
+  color: #fff;
+  border: 0;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.tekst-wielkosc {
+  padding: 20px;
+  line-height: 28px;
+}
+.dodano h1 {
+  color: green;
+}
+.nie_dodano h1 {
+  color: red;
+}
+
+.turnieje-info button {
+  background-color: #377db8;
+  color: #fff;
+  border: 0;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+table {
+  width: 400px;
+}
+th {
+  text-align: left;
+}
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: #377db8;
+}
+tr:nth-child(odd) {
+  background-color: #ddd;
+}
