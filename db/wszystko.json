@@ -62,6 +62,34 @@
       "miejsce": "dfadfsdf",
       "grupa": "900",
       "id": 3
+    },
+    {
+      "imie": "",
+      "nazwisko": "",
+      "punkty": "",
+      "ilosc_meczy": "",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "",
+      "data": "05-01-2022",
+      "miejsce": "dfadfsdf",
+      "grupa": "900",
+      "id": 4
+    },
+    {
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 5
     }
   ],
   "zawodnicy": [
@@ -69,28 +97,21 @@
       "imie": "Bartek",
       "nazwisko": "Barak",
       "haslo": "obama",
-      "elo": "900",
-      "id": 2
-    },
-    {
-      "imie": "Bartek",
-      "nazwisko": "Barak",
-      "haslo": "obama",
-      "elo": "900",
+      "elo": "1000",
       "id": 3
     },
     {
       "imie": "Klaudia",
       "nazwisko": "Derbot",
       "haslo": "kochamgadac",
-      "elo": "900",
+      "elo": "1050",
       "id": 4
     },
     {
       "imie": "Pan ",
       "nazwisko": "ddfasdf",
       "haslo": "dfasdfasd",
-      "elo": "900",
+      "elo": "950",
       "id": 5
     },
     {

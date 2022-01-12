@@ -102,6 +102,14 @@
   border-radius: 6px;
   cursor: pointer;
 }
+button {
+  background: #377db8;
+  color: #fff;
+  border: 0;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 .tekst-wielkosc {
   padding: 20px;
   line-height: 28px;

@@ -1,19 +1,21 @@
-import Navbar from './Navbar';
-import Home from './Home';
-import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
-import NowyTurniej from './NowyTurniej';
-import TurniejeInfo from './TurniejeInfo';
-import NieZnaleziono from './NieZnaleziono';
-import Rejestracja from './Rejestracja';
-import DodanoDoTurnieju from './DodanoDoTurnieju';
-import NieDodanoDoTurnieju from './NieDodanoDoTurnieju';
-import RozpocznijTurniej from './RozpocznijTurniej';
+import Navbar from "./Navbar";
+import Home from "./Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NowyTurniej from "./NowyTurniej";
+import TurniejeInfo from "./TurniejeInfo";
+import NieZnaleziono from "./NieZnaleziono";
+import Rejestracja from "./Rejestracja";
+import DodanoDoTurnieju from "./DodanoDoTurnieju";
+import NieDodanoDoTurnieju from "./NieDodanoDoTurnieju";
+import RozpocznijTurniej from "./RozpocznijTurniej";
+import TurniejeRozpoczete from "./TurniejeRozpoczete";
+import RankingElo from "./RankingElo";
 
 function App() {
   return (
     <Router>
       <div className="App">
-       <Navbar/>
+        <Navbar />
         <div className="content">
           <Switch>
             <Route exact path="/">
@@ -23,7 +25,7 @@ function App() {
               <NowyTurniej />
             </Route>
             <Route path="/rejestracja">
-                <Rejestracja/>
+              <Rejestracja />
             </Route>
             <Route path="/turnieje/:id">
               <TurniejeInfo />
@@ -37,12 +39,18 @@ function App() {
             <Route path="/rozpocznijTurniej">
               <RozpocznijTurniej />
             </Route>
+            <Route path="/turniejeRozpoczete/:id">
+              <TurniejeRozpoczete />
+            </Route>
+            <Route path="/rankingElo">
+              <RankingElo />
+            </Route>
             <Route path="*">
               <NieZnaleziono />
             </Route>
           </Switch>
+        </div>
       </div>
-    </div>
     </Router>
   );
 }

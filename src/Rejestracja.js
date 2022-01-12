@@ -5,7 +5,7 @@ const Rejestracja = () => {
   const [imie, setImie] = useState("");
   const [nazwisko, setNazwisko] = useState("");
   const [haslo, setHaslo] = useState("");
-  const [elo, setElo] = useState("900");
+  const [elo, setElo] = useState("800");
   const [array1, setArray1] = useState();
 
   const historia = useHistory();
@@ -53,6 +53,21 @@ const Rejestracja = () => {
       <a>Rejestracja jest wymagana do wzięcia udziału w turnieju</a>
 
       <form onSubmit={przyciskZarejestruj}>
+        <br></br>
+        <lable>Jak oceniasz swój poziom gry?</lable>
+        <select
+          className="select-elo"
+          required
+          onChange={(e) => {
+            let selectElo = e.target.value;
+            setElo(selectElo);
+          }}
+        >
+          <option value="800">Początkujący</option>
+          <option value="1000">zaawansowany</option>
+          <option value="900">średniozaawansowany</option>
+        </select>
+        <br></br>
         <br></br>
         <label>Imie:</label>
         <input

@@ -9,6 +9,7 @@ const Navbar = () => {
         <Link to="/nowyTurniej">Nowy turniej</Link>
         <Link to="/rejestracja">Załóż konto</Link>
         <Link to="/rozpocznijTurniej">Rozpoczte Turnieje</Link>
+        <Link to="/rankingElo">Ranking Elo</Link>
       </div>
     </nav>
   );
