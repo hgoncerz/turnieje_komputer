@@ -10,17 +10,6 @@
       "imie": " Klaudia Jan Jan Jan",
       "nazwisko": " Derbot Baba Matejko Paweł",
       "id": 2
-    },
-    {
-      "data": "05-01-2022",
-      "miejsce": "dfadfsdf",
-      "kontakt": "123456789",
-      "ile": "8",
-      "grupa": "900",
-      "opis_turnieju": "cfasdfasdf",
-      "imie": "",
-      "nazwisko": "",
-      "id": 3
     }
   ],
   "rozpoczety_Turniej": [
@@ -32,7 +21,10 @@
       "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
       "r2": " ",
       "r3": " ",
-      "eloZawodnikow": "900 900 900 900",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
       "id": 1
     },
     {
@@ -43,37 +35,37 @@
       "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
       "r2": " ",
       "r3": " ",
-      "eloZawodnikow": "900 900 900 900",
+      "eloZawodnikow": "1050 900 900 900",
       "data": "dfasd",
       "miejsce": "asdfasd",
       "grupa": "900",
       "id": 2
     },
     {
-      "imie": "",
-      "nazwisko": "",
-      "punkty": "",
-      "ilosc_meczy": "",
-      "r1": " ",
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
       "r2": " ",
       "r3": " ",
-      "eloZawodnikow": "",
-      "data": "05-01-2022",
-      "miejsce": "dfadfsdf",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
       "grupa": "900",
       "id": 3
     },
     {
-      "imie": "",
-      "nazwisko": "",
-      "punkty": "",
-      "ilosc_meczy": "",
-      "r1": " ",
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
       "r2": " ",
       "r3": " ",
-      "eloZawodnikow": "",
-      "data": "05-01-2022",
-      "miejsce": "dfadfsdf",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
       "grupa": "900",
       "id": 4
     },
@@ -90,7 +82,135 @@
       "miejsce": "asdfasd",
       "grupa": "900",
       "id": 5
+    },
+    {
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 6
+    },
+    {
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 7
+    },
+    {
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 8
+    },
+    {
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 9
+    },
+    {
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 10
+    },
+    {
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 11
+    },
+    {
+      "imie": [
+        " Klaudia Jan Jan Jan"
+      ],
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 12
+    },
+    {
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 13
     }
+  ],
+  "rozpoczety_Turniej_Ranking": [
+    [
+      "Klaudia",
+      "Jan",
+      "Jan",
+      "Jan"
+    ],
+    [
+      "Klaudia",
+      "Jan",
+      "Jan",
+      "Jan"
+    ]
   ],
   "zawodnicy": [
     {
