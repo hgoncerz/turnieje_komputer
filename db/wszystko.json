@@ -196,21 +196,21 @@
       "miejsce": "asdfasd",
       "grupa": "900",
       "id": 13
+    },
+    {
+      "imie": " Klaudia Jan Jan Jan",
+      "nazwisko": " Derbot Baba Matejko Paweł",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "Klaudia Derbot Jan Baba Jan Matejko Jan Paweł  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1050 900 900 900",
+      "data": "dfasd",
+      "miejsce": "asdfasd",
+      "grupa": "900",
+      "id": 14
     }
-  ],
-  "rozpoczety_Turniej_Ranking": [
-    [
-      "Klaudia",
-      "Jan",
-      "Jan",
-      "Jan"
-    ],
-    [
-      "Klaudia",
-      "Jan",
-      "Jan",
-      "Jan"
-    ]
   ],
   "zawodnicy": [
     {
