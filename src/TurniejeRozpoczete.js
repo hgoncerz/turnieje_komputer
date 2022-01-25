@@ -45,9 +45,46 @@ const TurniejeRozpoczete = () => {
     setDodajDataForm(nowyDataForm);
   };
 
+  const losowanieR1 = () => {
+    let imie_polaczone = [];
+    let nazwisko_polaczone = [];
+    let punkty_polaczone = [];
+    let ilosc_meczy_polaczone = [];
+    let eloZawodnikow_polaczone = [];
+
+    for (let i = 0; i < zawodnik1.length; i++) {
+      imie_polaczone.push(zawodnik1[i].imie);
+      nazwisko_polaczone.push(zawodnik1[i].nazwisko);
+      punkty_polaczone.push(zawodnik1[i].punkty);
+      ilosc_meczy_polaczone.push(zawodnik1[i].ilosc_meczy);
+      eloZawodnikow_polaczone.push(zawodnik1[i].elo);
+    }
+    console.log(imie_polaczone.join(" "));
+    console.log(nazwisko_polaczone.join(" "));
+    console.log(punkty_polaczone.join(" "));
+    console.log(ilosc_meczy_polaczone.join(" "));
+
+    fetch("http://localhost:8000/rozpoczety_Turniej/" + id, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        imie: " " + imie_polaczone.join(" "),
+        nazwisko: " " + nazwisko_polaczone.join(" "),
+        punkty: punkty_polaczone.join(" "),
+        ilosc_meczy: ilosc_meczy_polaczone.join(" "),
+        eloZawodnikow: eloZawodnikow_polaczone.join(" "),
+      }),
+    }).then(() => {
+      //console.log("dodano nowego zawodnika");
+      // historia.push("/dodanoDoTurnieju");
+    });
+  };
+
   const handleAddFormSubmit = (e) => {
     e.preventDefault();
     let eloWyswietl = "0";
+    console.log("tutaj0");
+    console.log(zawodnik1[1].imie);
 
     let nowyZawodnik1;
 
@@ -109,23 +146,6 @@ const TurniejeRozpoczete = () => {
     console.log(zawodnik);
     return zawodnik;
   };
-  //useEffect(() => {}, []);
-
-  /*useEffect(() => {
-    fetch(`http://localhost:8000/rozpoczety_Turniej/${id}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setImie(data.imie);
-        setNazwisko(data.nazwisko);
-        setPunkty(data.punkty);
-        setIlosc_meczy(data.ilosc_meczy);
-        setEloZawodnikow(data.eloZawodnikow);
-        setData(data.data);
-        setMiejsce(data.miejsce);
-        setGrupa(data.grupa);
-      });
-  }, []);
-  */
 
   useEffect(() => {
     fetch(`http://localhost:8000/rozpoczety_Turniej/${id}`)
@@ -218,7 +238,9 @@ const TurniejeRozpoczete = () => {
             ></input>
             <button type="submit">Dodaj</button>
           </form>
-          <button>Wylosuj pary</button>
+          <button type="button" onClick={() => losowanieR1()}>
+            Wylosuj pary
+          </button>
         </article>
       )}
     </div>
