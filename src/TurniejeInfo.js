@@ -53,16 +53,8 @@ const TurniejeInfo = () => {
       }
     });
 
-    for (let i = 1; i <= zawodnik_array.length; i++) {
-      if (i <= zawodnik_array.length / 2) {
-        r1Tym.push(zawodnik_array[i]);
-        r1Tym.push(zawodnik_array_nazwisko[i]);
-      } else {
-        r1Tym.push(zawodnik_array[i]);
-        r1Tym.push(zawodnik_array_nazwisko[i]);
-      }
-    }
-    const r1 = r1Tym.join(" ");
+    console.log(r1Tym);
+    const r1 = " ";
     const r2 = " ";
     const r3 = " ";
     const imie = imie_poczatkowe.join(" ");

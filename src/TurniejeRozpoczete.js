@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useEffect } from "react";
 import { nanoid } from "nanoid";
-import ReadOnlyRow from "./components/ReadOnlyRow";
+import { Link } from "react-router-dom";
 
 const TurniejeRozpoczete = () => {
   const [imie, setImie] = useState();
@@ -18,6 +18,7 @@ const TurniejeRozpoczete = () => {
   let zawodnik = [];
   const [zawodnik1, setZawodnik1] = useState();
   const [zawodnicyBaza, setZawodnicyBaza] = useState();
+  const [r1, setR1] = useState();
   let licznik = 1;
   const [dodajDataForm, setDodajDataForm] = useState({
     imie: "",
@@ -159,6 +160,7 @@ const TurniejeRozpoczete = () => {
         setData(data.data);
         setMiejsce(data.miejsce);
         setGrupa(data.grupa);
+        setR1(data.r1);
         setLoading(false);
       });
   }, []);
@@ -241,6 +243,9 @@ const TurniejeRozpoczete = () => {
           <button type="button" onClick={() => losowanieR1()}>
             Wylosuj pary
           </button>
+          <br></br>
+          <br></br>
+          <Link to={"/runda/" + id}>Przejdź do meczy</Link>
         </article>
       )}
     </div>

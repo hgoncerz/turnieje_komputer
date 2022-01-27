@@ -10,6 +10,7 @@ import NieDodanoDoTurnieju from "./NieDodanoDoTurnieju";
 import RozpocznijTurniej from "./RozpocznijTurniej";
 import TurniejeRozpoczete from "./TurniejeRozpoczete";
 import RankingElo from "./RankingElo";
+import Runda from "./Runda";
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
             </Route>
             <Route path="/rankingElo">
               <RankingElo />
+            </Route>
+            <Route path="/runda/:id">
+              <Runda />
             </Route>
             <Route path="*">
               <NieZnaleziono />
