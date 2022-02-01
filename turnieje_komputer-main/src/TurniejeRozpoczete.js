@@ -60,34 +60,6 @@ const TurniejeRozpoczete = () => {
       ilosc_meczy_polaczone.push(zawodnik1[i].ilosc_meczy);
       eloZawodnikow_polaczone.push(zawodnik1[i].elo);
     }
-
-    let r1x = [];
-    for (let i = 0; i <= imie_polaczone.length; i++) {
-      if (i < imie_polaczone.length / 2) {
-        r1x.push({
-          rezultat: {
-            wynik: "-",
-            wygrany: {
-              zawodnik: {
-                imie: imie_polaczone[i],
-                nazwisko: nazwisko_polaczone[i],
-              },
-              punkty: "-",
-            },
-            przegrany: {
-              zawodnik: {
-                imie: imie_polaczone[i + imie_polaczone.length / 2],
-                nazwisko: nazwisko_polaczone[i + imie_polaczone.length / 2],
-              },
-              punkty: "-",
-            },
-          },
-        });
-      }
-    }
-
-    const runda1 = r1x;
-
     console.log(imie_polaczone.join(" "));
     console.log(nazwisko_polaczone.join(" "));
     console.log(punkty_polaczone.join(" "));
@@ -101,7 +73,6 @@ const TurniejeRozpoczete = () => {
         nazwisko: " " + nazwisko_polaczone.join(" "),
         punkty: punkty_polaczone.join(" "),
         ilosc_meczy: ilosc_meczy_polaczone.join(" "),
-        r1: runda1,
         eloZawodnikow: eloZawodnikow_polaczone.join(" "),
       }),
     }).then(() => {
@@ -155,8 +126,6 @@ const TurniejeRozpoczete = () => {
     setZawodnik1(nowyZawodnik1);
   };
 
-  const [turniej, setTurniej] = useState();
-
   const rozdzielDane = () => {
     let imie_array = imie.split(" ");
     imie_array.splice(0, 1);
@@ -175,7 +144,7 @@ const TurniejeRozpoczete = () => {
         elo: eloZawodnikow_array[i],
       });
     }
-
+    console.log(zawodnik);
     return zawodnik;
   };
 
@@ -192,7 +161,6 @@ const TurniejeRozpoczete = () => {
         setMiejsce(data.miejsce);
         setGrupa(data.grupa);
         setR1(data.r1);
-        setTurniej(data);
         setLoading(false);
       });
   }, []);
@@ -202,9 +170,7 @@ const TurniejeRozpoczete = () => {
     nazwisko !== undefined &&
     punkty !== undefined &&
     ilosc_meczy !== undefined &&
-    eloZawodnikow !== undefined &&
-    turniej !== undefined &&
-    zawodnicyBaza !== undefined
+    eloZawodnikow !== undefined
   ) {
     if (loading) {
       rozdzielDane();

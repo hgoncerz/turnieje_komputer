@@ -29,7 +29,46 @@
       "nazwisko": " Barak Derbot Baba Matejko",
       "punkty": "0 0 0 0",
       "ilosc_meczy": "0 0 0 0",
-      "r1": "0 0 0 0",
+      "r1": [
+        {
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "-"
+            }
+          }
+        },
+        {
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Jan",
+                "nazwisko": "Baba"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Jan",
+                "nazwisko": "Matejko"
+              },
+              "punkty": "-"
+            }
+          }
+        }
+      ],
       "r2": " ",
       "r3": " ",
       "eloZawodnikow": "1000 1050 900 900",
@@ -51,6 +90,327 @@
       "miejsce": "Zabrze",
       "grupa": "800",
       "id": 2
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": "Bartek Barak Klaudia Derbot  ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Zabrze",
+      "grupa": "800",
+      "id": 3
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 4
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 5
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 6
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Zabrze",
+      "grupa": "800",
+      "id": 7
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 8
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Zabrze",
+      "grupa": "800",
+      "id": 9
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 10
+    },
+    {
+      "imie": " Bartek Klaudia Bartek Jan",
+      "nazwisko": " Barak Derbot Barak Matejko",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050 1000 900",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 11
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Zabrze",
+      "grupa": "800",
+      "id": 12
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 13
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 14
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 15
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 16
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "0 0",
+      "ilosc_meczy": "0 0",
+      "r1": [
+        {
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "-"
+            }
+          }
+        },
+        {
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {},
+              "punkty": "-"
+            }
+          }
+        }
+      ],
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 17
+    },
+    {
+      "imie": " Bartek Klaudia Bartek Klaudia Bartek Jan",
+      "nazwisko": " Barak Derbot Barak Derbot Barak Matejko",
+      "punkty": "0 0 0 0 0 0",
+      "ilosc_meczy": "0 0 0 0 0 0",
+      "r1": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "-"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "-"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Jan",
+                "nazwisko": "Matejko"
+              },
+              "punkty": "-"
+            }
+          }
+        }
+      ],
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050 1000 1050 1000 900",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 18
     }
   ],
   "zawodnicy": [

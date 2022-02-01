@@ -1,0 +1,100 @@
+{
+  "turnieje": [
+    {
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "kontakt": "123456789",
+      "ile": "8",
+      "grupa": "900",
+      "opis_turnieju": "Fajny turniej",
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "id": 1
+    },
+    {
+      "data": "27.01.2022",
+      "miejsce": "Zabrze",
+      "kontakt": "123456789",
+      "ile": "4",
+      "grupa": "800",
+      "opis_turnieju": "XD",
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "id": 2
+    }
+  ],
+  "rozpoczety_Turniej": [
+    {
+      "imie": " Bartek Klaudia Jan Jan",
+      "nazwisko": " Barak Derbot Baba Matejko",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": "0 0 0 0",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050 900 900",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 1
+    },
+    {
+      "imie": " Bartek Klaudia Jan Jan",
+      "nazwisko": " Barak Derbot Baba Matejko",
+      "punkty": "0 0 0 0",
+      "ilosc_meczy": "0 0 0 0",
+      "r1": " ",
+      "r2": " ",
+      "r3": " ",
+      "eloZawodnikow": "1000 1050 900 900",
+      "data": "27.01.2022",
+      "miejsce": "Zabrze",
+      "grupa": "800",
+      "id": 2
+    }
+  ],
+  "zawodnicy": [
+    {
+      "imie": "Bartek",
+      "nazwisko": "Barak",
+      "haslo": "obama",
+      "elo": "1000",
+      "id": 3
+    },
+    {
+      "imie": "Klaudia",
+      "nazwisko": "Derbot",
+      "haslo": "kochamgadac",
+      "elo": "1050",
+      "id": 4
+    },
+    {
+      "imie": "Pan ",
+      "nazwisko": "ddfasdf",
+      "haslo": "dfasdfasd",
+      "elo": "950",
+      "id": 5
+    },
+    {
+      "imie": "Jan",
+      "nazwisko": "Baba",
+      "haslo": "xd",
+      "elo": "900",
+      "id": 6
+    },
+    {
+      "imie": "Jan",
+      "nazwisko": "Matejko",
+      "haslo": "xd",
+      "elo": "900",
+      "id": 7
+    },
+    {
+      "imie": "Jan",
+      "nazwisko": "Paweł",
+      "haslo": "xddd",
+      "elo": "900",
+      "id": 8
+    }
+  ]
+}

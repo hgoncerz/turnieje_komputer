@@ -53,35 +53,8 @@ const TurniejeInfo = () => {
       }
     });
 
-    let r1x = [];
-    zawodnik_array.shift();
-    zawodnik_array_nazwisko.shift();
-    for (let i = 0; i <= zawodnik_array.length; i++) {
-      if (i < zawodnik_array.length / 2) {
-        r1x.push({
-          rezultat: {
-            wynik: "-",
-            wygrany: {
-              zawodnik: {
-                imie: zawodnik_array[i],
-                nazwisko: zawodnik_array_nazwisko[i],
-              },
-              punkty: "-",
-            },
-            przegrany: {
-              zawodnik: {
-                imie: zawodnik_array[i + zawodnik_array.length / 2],
-                nazwisko:
-                  zawodnik_array_nazwisko[i + zawodnik_array.length / 2],
-              },
-              punkty: "-",
-            },
-          },
-        });
-      }
-    }
-
-    const r1 = r1x;
+    console.log(r1Tym);
+    const r1 = " ";
     const r2 = " ";
     const r3 = " ";
     const imie = imie_poczatkowe.join(" ");
