@@ -59,6 +59,7 @@ const TurniejeInfo = () => {
     for (let i = 0; i <= zawodnik_array.length; i++) {
       if (i < zawodnik_array.length / 2) {
         r1x.push({
+          id: i,
           rezultat: {
             wynik: "-",
             wygrany: {

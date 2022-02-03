@@ -65,6 +65,7 @@ const TurniejeRozpoczete = () => {
     for (let i = 0; i <= imie_polaczone.length; i++) {
       if (i < imie_polaczone.length / 2) {
         r1x.push({
+          id: i,
           rezultat: {
             wynik: "-",
             wygrany: {
@@ -166,6 +167,27 @@ const TurniejeRozpoczete = () => {
     const ilosc_meczy_array = ilosc_meczy.split(" ");
     const eloZawodnikow_array = eloZawodnikow.split(" ");
 
+    let eloZawodnikow2 = [];
+
+    for (let i = 0; i < zawodnicyBaza.length; i++) {
+      if (
+        zawodnicyBaza[i].imie === imie_array[i] &&
+        zawodnicyBaza[i].nazwisko === nazwisko_array[i]
+      ) {
+        eloZawodnikow2.push(zawodnicyBaza[i].elo);
+      }
+    }
+    console.log(eloZawodnikow2);
+
+    zawodnicyBaza.forEach((element1) => {
+      if (
+        element1.imie === imie_array[element1] &&
+        element1.nazwisko === nazwisko_array[element1]
+      ) {
+        eloZawodnikow2.push(element1.elo);
+      }
+    });
+
     for (let i = 0; i < imie_array.length; i++) {
       zawodnik.push({
         imie: imie_array[i],
@@ -244,12 +266,14 @@ const TurniejeRozpoczete = () => {
                     <td>{zawodnik.punkty}</td>
                     <td>{zawodnik.ilosc_meczy}</td>
                     <td>{zawodnik.elo}</td>
-                    <button
-                      type="button"
-                      onClick={() => handleDeleteClick(zawodnik.id)}
-                    >
-                      Usuń
-                    </button>
+                    <td>
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteClick(zawodnik.id)}
+                      >
+                        Usuń
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
