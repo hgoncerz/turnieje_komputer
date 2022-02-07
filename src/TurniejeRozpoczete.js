@@ -144,7 +144,6 @@ const TurniejeRozpoczete = () => {
       nowyZawodnik1 = [...zawodnik1];
       console.log("nie dodano bo nie ma w bazie");
     }
-
     console.log(zawodnicyBaza);
     setZawodnik1(nowyZawodnik1);
   };
@@ -169,15 +168,14 @@ const TurniejeRozpoczete = () => {
 
     let eloZawodnikow2 = [];
 
-    for (let i = 0; i < zawodnicyBaza.length; i++) {
-      if (
-        zawodnicyBaza[i].imie === imie_array[i] &&
-        zawodnicyBaza[i].nazwisko === nazwisko_array[i]
-      ) {
-        eloZawodnikow2.push(zawodnicyBaza[i].elo);
-      }
-    }
-    console.log(eloZawodnikow2);
+    // for (let i = 0; i < zawodnicyBaza.length; i++) {
+    //   if (
+    //     zawodnicyBaza[i].imie === imie_array[i] &&
+    //     zawodnicyBaza[i].nazwisko === nazwisko_array[i]
+    //   ) {
+    //     eloZawodnikow2.push(zawodnicyBaza[i].elo);
+    //   }
+    // }
 
     zawodnicyBaza.forEach((element1) => {
       if (
@@ -197,7 +195,6 @@ const TurniejeRozpoczete = () => {
         elo: eloZawodnikow_array[i],
       });
     }
-
     return zawodnik;
   };
 
@@ -226,7 +223,8 @@ const TurniejeRozpoczete = () => {
     ilosc_meczy !== undefined &&
     eloZawodnikow !== undefined &&
     turniej !== undefined &&
-    zawodnicyBaza !== undefined
+    zawodnicyBaza !== undefined &&
+    zawodnik1 !== undefined
   ) {
     if (loading) {
       rozdzielDane();

@@ -6,7 +6,10 @@ import ReadOnlyRow from "./components/ReadOnlyRow";
 const Runda = () => {
   const { id } = useParams();
   const [mecz, setMecz] = useState();
+  const [mecz2, setMecz2] = useState();
+  const [punkty, setPunkty] = useState();
   const [editZawodnikId, setEditZawodnikId] = useState(null);
+  const [editZawodnikId2, setEditZawodnikId2] = useState(null);
   const [data, setData] = useState();
   const [grupaRank, setGrupaRank] = useState();
   const [miejsceRank, setMiejsceRank] = useState();
@@ -14,6 +17,11 @@ const Runda = () => {
   const [imieBaza, setImieBaza] = useState();
   const [nazwiskoBaza, setNazwiskoBaza] = useState();
   const [editFormData, setEditFormData] = useState({
+    punktyWygrany: "",
+    punktyPrzegrany: "",
+    wynik: "",
+  });
+  const [editFormData2, setEditFormData2] = useState({
     punktyWygrany: "",
     punktyPrzegrany: "",
     wynik: "",
@@ -27,12 +35,14 @@ const Runda = () => {
     fetch(`http://localhost:8000/rozpoczety_Turniej/${id}`)
       .then((response) => response.json())
       .then((data) => {
+        setPunkty(data.punkty);
         setData(data.data);
         setGrupaRank(data.grupa);
         setMiejsceRank(data.miejsce);
         setImieBaza(data.imie);
         setNazwiskoBaza(data.nazwisko);
         setMecz(data.r1);
+        setMecz2(data.r2);
       });
   }, []);
 
@@ -193,15 +203,238 @@ const Runda = () => {
     });
 
     nowePunkty = noweWygrany.concat(nowePrzegrany).join(" ");
+    let meczyk = [];
+    let ilosc = noweWygrany.length + nowePrzegrany.length;
+
+    for (let i = 0; i < ilosc; i++) {
+      meczyk.push(1);
+    }
+    const mecze_iloscowe = meczyk.join(" ");
 
     fetch("http://localhost:8000/rozpoczety_Turniej/" + id, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         punkty: nowePunkty,
-        ilosc_meczy: "1 1 1 1",
+        ilosc_meczy: mecze_iloscowe,
       }),
     }).then(() => {});
+  };
+
+  const zatwierdzR2 = () => {
+    const updateElo = (imie, nazwisko, noweElo) => {
+      bazaZawodnikow.forEach((element) => {
+        if (element.imie === imie && element.nazwisko === nazwisko) {
+          fetch("http://localhost:8000/zawodnicy/" + element.id, {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              elo: noweElo.toString(),
+            }),
+          }).then(() => {});
+        }
+      });
+    };
+    let punktyR1Wygrany;
+    let punktyR1Przegrany;
+    let imieWygrany;
+    let nazwiskoWygrany;
+    let imiePrzegrany;
+    let nazwiskoPrzegrany;
+    let noweWygrany = [];
+    let nowePrzegrany = [];
+    let nowePunkty = [];
+
+    mecz2.forEach((element) => {
+      punktyR1Wygrany = parseInt(element.rezultat.wygrany.punkty);
+      punktyR1Przegrany = parseInt(element.rezultat.przegrany.punkty);
+      imieWygrany = element.rezultat.wygrany.zawodnik.imie;
+      nazwiskoWygrany = element.rezultat.wygrany.zawodnik.nazwisko;
+      imiePrzegrany = element.rezultat.przegrany.zawodnik.imie;
+      nazwiskoPrzegrany = element.rezultat.przegrany.zawodnik.nazwisko;
+      let elo1;
+      let elo2;
+      let wygralZawodnik;
+      let przegralZawodnik;
+
+      if (punktyR1Wygrany > punktyR1Przegrany) {
+        noweWygrany.push(punktyR1Wygrany);
+        nowePrzegrany.push(punktyR1Przegrany);
+
+        bazaZawodnikow.forEach((element1) => {
+          if (
+            element1.imie === imieWygrany &&
+            element1.nazwisko === nazwiskoWygrany
+          ) {
+            elo1 = parseInt(element1.elo);
+          }
+        });
+
+        bazaZawodnikow.forEach((element1) => {
+          if (
+            element1.imie === imiePrzegrany &&
+            element1.nazwisko === nazwiskoPrzegrany
+          ) {
+            elo2 = parseInt(element1.elo);
+          }
+        });
+
+        przegralZawodnik = wyliczEloPrzegrany(elo1, elo2);
+        wygralZawodnik = wyliczEloWygrany(elo2, elo1);
+
+        updateElo(imieWygrany, nazwiskoWygrany, wygralZawodnik);
+        updateElo(imiePrzegrany, nazwiskoPrzegrany, przegralZawodnik);
+      } else {
+        noweWygrany.push(punktyR1Wygrany);
+        nowePrzegrany.push(punktyR1Przegrany);
+
+        bazaZawodnikow.forEach((element1) => {
+          if (
+            element1.imie === imieWygrany &&
+            element1.nazwisko === nazwiskoWygrany
+          ) {
+            elo1 = parseInt(element1.elo);
+          }
+        });
+
+        bazaZawodnikow.forEach((element1) => {
+          if (
+            element1.imie === imiePrzegrany &&
+            element1.nazwisko === nazwiskoPrzegrany
+          ) {
+            elo2 = parseInt(element1.elo);
+          }
+        });
+
+        przegralZawodnik = wyliczEloPrzegrany(elo2, elo1);
+        wygralZawodnik = wyliczEloWygrany(elo1, elo2);
+
+        updateElo(imieWygrany, nazwiskoWygrany, przegralZawodnik);
+        updateElo(imiePrzegrany, nazwiskoPrzegrany, wygralZawodnik);
+      }
+    });
+
+    nowePunkty = noweWygrany.concat(nowePrzegrany).join(" ");
+    let meczyk = [];
+    let ilosc = noweWygrany.length + nowePrzegrany.length;
+
+    for (let i = 0; i < ilosc; i++) {
+      meczyk.push(2);
+    }
+    const mecze_iloscowe = meczyk.join(" ");
+
+    const pozycja = (imie, nazwisko) => {
+      let imiona = imieBaza.split(" ");
+      let nazwiska = nazwiskoBaza.split(" ");
+
+      imiona.shift();
+      nazwiska.shift();
+
+      console.log(imiona);
+      let pozycja = 0;
+
+      for (let i = 0; i < imiona.length; i++) {
+        if (imiona[i] === imie && nazwiska[i] === nazwisko) {
+          pozycja = i;
+        }
+      }
+      return pozycja;
+    };
+
+    console.log(pozycja("Jan", "Matejko"));
+
+    fetch("http://localhost:8000/rozpoczety_Turniej/" + id, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        punkty: nowePunkty,
+        ilosc_meczy: mecze_iloscowe,
+      }),
+    }).then(() => {});
+  };
+
+  const losowanieR2 = () => {
+    let punktyR1Wygrany;
+    let punktyR1Przegrany;
+    let imieWygrany;
+    let nazwiskoWygrany;
+    let imiePrzegrany;
+    let nazwiskoPrzegrany;
+    // let imie_polaczone = [];
+    // let nazwisko_polaczone = [];
+    // let punkty_polaczone = [];
+    // let ilosc_meczy_polaczone = [];
+    // let eloZawodnikow_polaczone = [];
+    //funkcja kto wygrał dodać ich do tablicy wygrany i osobno przegrani do tablicy przegranych
+    let arrayWygraliImie = [];
+    let arrayWygraliNazwisko = [];
+    let arrayPrzegraliImie = [];
+    let arrayPrzegraliNazwisko = [];
+
+    mecz.forEach((element) => {
+      punktyR1Wygrany = parseInt(element.rezultat.wygrany.punkty);
+      punktyR1Przegrany = parseInt(element.rezultat.przegrany.punkty);
+      imieWygrany = element.rezultat.wygrany.zawodnik.imie;
+      nazwiskoWygrany = element.rezultat.wygrany.zawodnik.nazwisko;
+      imiePrzegrany = element.rezultat.przegrany.zawodnik.imie;
+      nazwiskoPrzegrany = element.rezultat.przegrany.zawodnik.nazwisko;
+
+      if (punktyR1Wygrany > punktyR1Przegrany) {
+        arrayWygraliImie.push(imieWygrany);
+        arrayWygraliNazwisko.push(nazwiskoWygrany);
+        arrayPrzegraliImie.push(imiePrzegrany);
+        arrayPrzegraliNazwisko.push(nazwiskoPrzegrany);
+      } else {
+        arrayWygraliImie.push(imiePrzegrany);
+        arrayWygraliNazwisko.push(nazwiskoPrzegrany);
+        arrayPrzegraliImie.push(imieWygrany);
+        arrayPrzegraliNazwisko.push(nazwiskoWygrany);
+      }
+    });
+
+    let polaczona_imie = arrayWygraliImie.concat(arrayPrzegraliImie);
+    let polaczona_nazwisko = arrayWygraliNazwisko.concat(
+      arrayPrzegraliNazwisko
+    );
+    let r2x = [];
+    console.log(polaczona_imie);
+    console.log(polaczona_nazwisko);
+    let licznik_id = 0;
+
+    for (let i = 0; i < polaczona_nazwisko.length; i++) {
+      r2x.push({
+        id: licznik_id,
+        rezultat: {
+          wynik: "-",
+          wygrany: {
+            zawodnik: {
+              imie: polaczona_imie[i],
+              nazwisko: polaczona_nazwisko[i],
+            },
+            punkty: "-",
+          },
+          przegrany: {
+            zawodnik: {
+              imie: polaczona_imie[i + 1],
+              nazwisko: polaczona_nazwisko[i + 1],
+            },
+            punkty: "-",
+          },
+        },
+      });
+      licznik_id++;
+      i++;
+    }
+    fetch("http://localhost:8000/rozpoczety_Turniej/" + id, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        r2: r2x,
+      }),
+    }).then(() => {
+      //console.log("dodano nowego zawodnika");
+      // historia.push("/dodanoDoTurnieju");
+    });
   };
 
   const handleEditClick = (event, zawodnik) => {
@@ -215,6 +448,18 @@ const Runda = () => {
     };
 
     setEditFormData(formValues);
+  };
+  const handleEditClick2 = (event, zawodnik) => {
+    event.preventDefault();
+    setEditZawodnikId2(zawodnik.id);
+
+    const formValues = {
+      punktyWygrany: zawodnik.rezultat.wygrany.punkty,
+      punktyPrzegrany: zawodnik.rezultat.przegrany.punkty,
+      wynik: zawodnik.rezultat.wynik,
+    };
+
+    setEditFormData2(formValues);
   };
 
   const handleEditFormSubmit = (event) => {
@@ -258,6 +503,49 @@ const Runda = () => {
     setEditZawodnikId(null);
   };
 
+  const handleEditFormSubmit2 = (event) => {
+    event.preventDefault();
+
+    const nowiZawodnicy = [...mecz2];
+    const index = mecz2.findIndex(
+      (zawodnik) => zawodnik.id === editZawodnikId2
+    );
+
+    const editedZawodnik = {
+      id: editZawodnikId2,
+      rezultat: {
+        wynik: editFormData2.wynik,
+        wygrany: {
+          zawodnik: {
+            imie: mecz2[index].rezultat.wygrany.zawodnik.imie,
+            nazwisko: mecz2[index].rezultat.wygrany.zawodnik.nazwisko,
+          },
+          punkty: editFormData2.punktyWygrany,
+        },
+        przegrany: {
+          zawodnik: {
+            imie: mecz2[index].rezultat.przegrany.zawodnik.imie,
+            nazwisko: mecz2[index].rezultat.przegrany.zawodnik.nazwisko,
+          },
+          punkty: editFormData2.punktyPrzegrany,
+        },
+      },
+    };
+
+    nowiZawodnicy[index] = editedZawodnik;
+
+    setMecz2(nowiZawodnicy);
+
+    fetch("http://localhost:8000/rozpoczety_Turniej/" + id, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        r2: nowiZawodnicy,
+      }),
+    }).then(() => {});
+    setEditZawodnikId2(null);
+  };
+
   const handleEditFormChange = (event) => {
     event.preventDefault();
 
@@ -268,6 +556,18 @@ const Runda = () => {
     newFormData[fieldName] = fieldValue;
 
     setEditFormData(newFormData);
+  };
+
+  const handleEditFormChange2 = (event) => {
+    event.preventDefault();
+
+    const fieldName = event.target.getAttribute("name");
+    const fieldValue = event.target.value;
+
+    const newFormData = { ...editFormData2 };
+    newFormData[fieldName] = fieldValue;
+
+    setEditFormData2(newFormData);
   };
 
   return (
@@ -318,6 +618,58 @@ const Runda = () => {
           <br></br>
           <button type="button" onClick={() => zatwierdzR1()}>
             Zatwierdź runde 1
+          </button>
+          <button type="button" onClick={() => losowanieR2()}>
+            Wylosuj 2 runde
+          </button>
+        </article>
+      )}
+      {mecz2 && (
+        <article>
+          <br></br>
+          <h1>Runda 2</h1>
+          <br></br>
+          <form onSubmit={handleEditFormSubmit2}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Imie</th>
+                  <th>Nazwisko</th>
+                  <th>Punkty</th>
+                  <th>Imie</th>
+                  <th>Nazwisko</th>
+                  <th>Punkty</th>
+                  <th>Rezultat</th>
+                  <th>Akcja</th>
+                </tr>
+              </thead>
+              <tbody>
+                {/*mecz[0].rezultat.wygrany.zawodnik.imie*/}
+
+                {mecz2.map((zawodnik) => (
+                  <Fragment>
+                    {editZawodnikId2 === zawodnik.id ? (
+                      <EditableRow
+                        editFormData={editFormData2}
+                        handleEditFormChange={handleEditFormChange2}
+                      />
+                    ) : (
+                      <ReadOnlyRow
+                        zawodnik={zawodnik}
+                        handleEditClick={handleEditClick2}
+                      />
+                    )}
+                  </Fragment>
+                ))}
+              </tbody>
+            </table>
+          </form>
+          <br></br>
+          <button type="button" onClick={() => zatwierdzR2()}>
+            Zatwierdź runde 2
+          </button>
+          <button type="button" onClick={() => losowanieR2()}>
+            Wylosuj 3 runde
           </button>
         </article>
       )}
