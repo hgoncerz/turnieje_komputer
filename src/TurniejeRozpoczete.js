@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { nanoid } from "nanoid";
 import { Link } from "react-router-dom";
 
-const TurniejeRozpoczete = () => {
+const TurniejeRozpoczete = ({ isAuth: isAuth }) => {
   const [imie, setImie] = useState();
   const [nazwisko, setNazwisko] = useState();
   const [punkty, setPunkty] = useState();
@@ -252,7 +252,7 @@ const TurniejeRozpoczete = () => {
                   <th>Punkty</th>
                   <th>Mecze</th>
                   <th>ELO</th>
-                  <th>Akcja</th>
+                  {isAuth && <th>Akcja</th>}
                 </tr>
               </thead>
               <tbody>
@@ -264,42 +264,49 @@ const TurniejeRozpoczete = () => {
                     <td>{zawodnik.punkty}</td>
                     <td>{zawodnik.ilosc_meczy}</td>
                     <td>{zawodnik.elo}</td>
-                    <td>
-                      <button
-                        type="button"
-                        onClick={() => handleDeleteClick(zawodnik.id)}
-                      >
-                        Usuń
-                      </button>
-                    </td>
+                    {isAuth && (
+                      <td>
+                        <button
+                          type="button"
+                          onClick={() => handleDeleteClick(zawodnik.id)}
+                        >
+                          Usuń
+                        </button>
+                      </td>
+                    )}
                   </tr>
                 ))}
               </tbody>
             </table>
           </form>
-          <h2>Dodaj nowego uczestnika</h2>
-          <a>Użytkownik musi być w bazie zawodników</a>
-          <form onSubmit={handleAddFormSubmit}>
-            <input
-              type="text"
-              name="imie"
-              required="required"
-              placeholder="Wprowadź imie"
-              onChange={handleAddFormChange}
-            ></input>
-            <input
-              type="text"
-              name="nazwisko"
-              required="required"
-              placeholder="Wprowadź nazwisko"
-              onChange={handleAddFormChange}
-            ></input>
-            <button type="submit">Dodaj</button>
-          </form>
-          <button type="button" onClick={() => losowanieR1()}>
-            Wylosuj pary
-          </button>
-          <br></br>
+          {isAuth && (
+            <div>
+              <h2>Dodaj nowego uczestnika</h2>
+              <a>Użytkownik musi być w bazie zawodników</a>
+              <form onSubmit={handleAddFormSubmit}>
+                <input
+                  type="text"
+                  name="imie"
+                  required="required"
+                  placeholder="Wprowadź imie"
+                  onChange={handleAddFormChange}
+                ></input>
+                <input
+                  type="text"
+                  name="nazwisko"
+                  required="required"
+                  placeholder="Wprowadź nazwisko"
+                  onChange={handleAddFormChange}
+                ></input>
+                <button type="submit">Dodaj</button>
+              </form>
+              <button type="button" onClick={() => losowanieR1()}>
+                Wylosuj pary
+              </button>
+              <br></br>
+            </div>
+          )}
+
           <br></br>
           <Link to={"/runda/" + id}>Przejdź do meczy</Link>
         </article>

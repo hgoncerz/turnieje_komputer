@@ -233,26 +233,26 @@
     {
       "imie": " Bartek Klaudia Jan Pan Jan Jan",
       "nazwisko": " Barak Derbot Matejko Kot Baba Paweł",
-      "punkty": "2 3 3 1 0 0",
+      "punkty": "5 6 6 3 4 3",
       "ilosc_meczy": "2 2 2 2 2 2",
       "r1": [
         {
           "id": 0,
           "rezultat": {
-            "wynik": "-",
+            "wynik": "6;2 6;2",
             "wygrany": {
               "zawodnik": {
                 "imie": "Bartek",
                 "nazwisko": "Barak"
               },
-              "punkty": "-"
+              "punkty": "3"
             },
             "przegrany": {
               "zawodnik": {
                 "imie": "Pan",
                 "nazwisko": "Kot"
               },
-              "punkty": "-"
+              "punkty": "0"
             }
           }
         },
@@ -365,6 +365,331 @@
       "miejsce": "Karków",
       "grupa": "900",
       "id": 25
+    },
+    {
+      "imie": " Bartek Klaudia Pan Jan",
+      "nazwisko": " Barak Derbot Kot Baba",
+      "punkty": "3 1 0 2",
+      "ilosc_meczy": "1 1 1 1",
+      "r1": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "6;2 6;4",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "3"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Pan",
+                "nazwisko": "Kot"
+              },
+              "punkty": "0"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "rezultat": {
+            "wynik": "6;5 5;6 8/10",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "1"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Jan",
+                "nazwisko": "Baba"
+              },
+              "punkty": "2"
+            }
+          }
+        }
+      ],
+      "r2": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Jan",
+                "nazwisko": "Baba"
+              },
+              "punkty": "-"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Pan",
+                "nazwisko": "Kot"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "-"
+            }
+          }
+        }
+      ],
+      "r3": " ",
+      "eloZawodnikow": "1104 1248 828 679",
+      "data": "27.01.2022",
+      "miejsce": "Karków",
+      "grupa": "900",
+      "id": 26
+    },
+    {
+      "imie": " Bartek Klaudia Jan Jan",
+      "nazwisko": " Barak Derbot Baba Matejko",
+      "punkty": "2 0 1 3",
+      "ilosc_meczy": "1 1 1 1",
+      "r1": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "6;3 3;6 10;0",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "2"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Jan",
+                "nazwisko": "Baba"
+              },
+              "punkty": "1"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "rezultat": {
+            "wynik": "2;6 2;6",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "0"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Jan",
+                "nazwisko": "Matejko"
+              },
+              "punkty": "3"
+            }
+          }
+        }
+      ],
+      "r2": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Jan",
+                "nazwisko": "Matejko"
+              },
+              "punkty": "-"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Jan",
+                "nazwisko": "Baba"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "-"
+            }
+          }
+        }
+      ],
+      "r3": "",
+      "eloZawodnikow": "1109 1219 708 1205",
+      "data": "27.01.2022",
+      "miejsce": "Zabrze",
+      "grupa": "800",
+      "id": 27
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "2 1",
+      "ilosc_meczy": "1 1",
+      "r1": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "6;3 4;6 10/5",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "2"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "1"
+            }
+          }
+        }
+      ],
+      "r2": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "-"
+            }
+          }
+        }
+      ],
+      "r3": " ",
+      "eloZawodnikow": "1112 1203",
+      "data": "27.01.2022",
+      "miejsce": "Zabrze",
+      "grupa": "800",
+      "id": 28
+    },
+    {
+      "imie": " Bartek Klaudia",
+      "nazwisko": " Barak Derbot",
+      "punkty": "15 0",
+      "ilosc_meczy": "3 3",
+      "r1": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "6;3 6;3",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "3"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "0"
+            }
+          }
+        }
+      ],
+      "r2": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "6;2 6;2",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "3"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "0"
+            }
+          }
+        }
+      ],
+      "r3": [
+        {
+          "id": 0,
+          "rezultat": {
+            "wynik": "6;3 6;3",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "3"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Klaudia",
+                "nazwisko": "Derbot"
+              },
+              "punkty": "0"
+            }
+          }
+        }
+      ],
+      "eloZawodnikow": "1131 1184",
+      "data": "27.01.2022",
+      "miejsce": "Zabrze",
+      "grupa": "800",
+      "id": 29
     }
   ],
   "zawodnicy": [
@@ -372,42 +697,42 @@
       "imie": "Bartek",
       "nazwisko": "Barak",
       "haslo": "obama",
-      "elo": "951",
+      "elo": "1203",
       "id": 0
     },
     {
       "imie": "Klaudia",
       "nazwisko": "Derbot",
       "haslo": "kochamgadac",
-      "elo": "1209",
+      "elo": "1112",
       "id": 1
     },
     {
       "imie": "Pan",
       "nazwisko": "Kot",
       "haslo": "dfasdfasd",
-      "elo": "1001",
+      "elo": "823",
       "id": 2
     },
     {
       "imie": "Jan",
       "nazwisko": "Baba",
       "haslo": "xd",
-      "elo": "783",
+      "elo": "705",
       "id": 3
     },
     {
       "imie": "Jan",
       "nazwisko": "Matejko",
       "haslo": "xd",
-      "elo": "998",
+      "elo": "1221",
       "id": 4
     },
     {
       "imie": "Jan",
       "nazwisko": "Paweł",
       "haslo": "xddd",
-      "elo": "855",
+      "elo": "786",
       "id": 5
     }
   ]

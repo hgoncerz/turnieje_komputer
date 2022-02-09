@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 import { useEffect, useState } from "react";
 import WyswietlZawodnikow from "./WyswietlZawodnikow";
 
-const TurniejeInfo = () => {
+const TurniejeInfo = ({ isAuth: isAuth }) => {
   const [imie, setImie] = useState();
   const [nazwisko, setNazwisko] = useState();
   const [haslo, setHaslo] = useState();
@@ -83,8 +83,8 @@ const TurniejeInfo = () => {
     }
 
     const r1 = r1x;
-    const r2 = " ";
-    const r3 = " ";
+    const r2 = "";
+    const r3 = "";
     const imie = imie_poczatkowe.join(" ");
     const nazwisko = nazwisko_poczatkowe.join(" ");
     const eloZawodnikow = eloTymczasowe.join(" ");
@@ -202,10 +202,15 @@ const TurniejeInfo = () => {
           <div>Ilosc maksymalna uczestnikow: {turniej.ile}</div>
           <div>Opis Turnieju: {turniej.opis_turnieju}</div>
 
-          <button onClick={usunTurniej}>usuń turniej</button>
-          <br></br>
-          <br></br>
-          <button onClick={rozpocznijTurniej}>Rozpocznij Turniej</button>
+          {isAuth && (
+            <div>
+              <button onClick={usunTurniej}>usuń turniej</button>
+              <br></br>
+              <br></br>
+              <button onClick={rozpocznijTurniej}>Rozpocznij Turniej</button>
+            </div>
+          )}
+
           <h2>Zapisz się do turnieju:</h2>
           <form onSubmit={przyciskZapisz}>
             <label>Imie</label>

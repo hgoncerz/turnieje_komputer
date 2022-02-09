@@ -1,18 +1,34 @@
 import { Link } from "react-router-dom";
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <Link to="/">
-        <h1>Turnieje tenisowe</h1>
-      </Link>
-      <div className="links">
-        <Link to="/nowyTurniej">Nowy turniej</Link>
-        <Link to="/rejestracja">Załóż konto</Link>
-        <Link to="/rozpocznijTurniej">Rozpoczte Turnieje</Link>
-        <Link to="/rankingElo">Ranking Elo</Link>
-      </div>
-    </nav>
-  );
+const Navbar = ({ isAuth: isAuth }) => {
+  if (isAuth) {
+    return (
+      <nav className="navbar">
+        <Link to="/">
+          <h1>Turnieje tenisowe</h1>
+        </Link>
+        <div className="links">
+          <Link to="/nowyTurniej">Nowy turniej</Link>
+          <Link to="/rejestracja">Załóż konto</Link>
+          <Link to="/rozpocznijTurniej">Rozpoczte Turnieje</Link>
+          <Link to="/rankingElo">Ranking Elo</Link>
+        </div>
+      </nav>
+    );
+  } else {
+    return (
+      <nav className="navbar">
+        <Link to="/">
+          <h1>Turnieje tenisowe</h1>
+        </Link>
+        <div className="links">
+          <Link to="/login">Logowanie Admin</Link>
+          <Link to="/rejestracja">Załóż konto</Link>
+          <Link to="/rozpocznijTurniej">Rozpoczte Turnieje</Link>
+          <Link to="/rankingElo">Ranking Elo</Link>
+        </div>
+      </nav>
+    );
+  }
 };
 
 export default Navbar;
