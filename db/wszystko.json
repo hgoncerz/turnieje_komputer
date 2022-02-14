@@ -734,6 +734,20 @@
       "haslo": "xddd",
       "elo": "786",
       "id": 5
+    },
+    {
+      "imie": "fghdfg",
+      "nazwisko": "dfghdfgh",
+      "haslo": "ghdfghdfgh",
+      "elo": "800",
+      "id": 6
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "login": "admin",
+      "haslo": "admin"
     }
   ]
 }

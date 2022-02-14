@@ -14,36 +14,54 @@ import Runda from "./Runda";
 import ProtectedRoute from "./ProtectedRoute";
 import LoginForm from "./components/LoginForm";
 import { useState } from "react";
-
+import { useEffect } from "react";
 function App() {
   const [isAuth, setIsAuth] = useState(false);
-
-  const adminUser = {
-    login: "admin",
-    haslo: "admin",
-  };
-
+  const [adminBaza, setAdminBaza] = useState();
   const [user, setUser] = useState({ login: "", haslo: "" });
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    fetch(`http://localhost:8000/admin`)
+      .then((response) => response.json())
+      .then((data) => {
+        setAdminBaza(data);
+      });
+  }, []);
+
+  useEffect(() => {
+    const data = localStorage.getItem("login");
+    if (data) {
+      setUser(JSON.parse(data));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("login", JSON.stringify(user));
+  });
 
   const Login = (details) => {
     console.log(details);
 
-    if (details.login == adminUser.login && details.haslo == adminUser.haslo) {
-      console.log("zalogowany");
-      setUser({
-        login: details.login,
-        haslo: details.haslo,
-      });
-    } else {
-      console.log("złe login lub haslo");
-      setError("nieprawidłowy login lub haslo");
-    }
+    adminBaza.forEach((element) => {
+      if (details.login == element.login && details.haslo == element.haslo) {
+        console.log("zalogowany");
+        setIsAuth(true);
+        setUser({
+          login: details.login,
+          haslo: details.haslo,
+        });
+      } else {
+        console.log("złe login lub haslo");
+        setError("nieprawidłowy login lub haslo");
+      }
+    });
   };
 
   const Logout = () => {
     console.log("Logout");
     setUser({ login: "", haslo: "" });
+    setIsAuth(false);
   };
 
   return (

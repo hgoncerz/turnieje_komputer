@@ -1001,6 +1001,7 @@ const Runda = ({ isAuth: isAuth }) => {
                       <ReadOnlyRow
                         zawodnik={zawodnik}
                         handleEditClick={handleEditClick2}
+                        isAuth={isAuth}
                       />
                     )}
                   </Fragment>
@@ -1052,6 +1053,7 @@ const Runda = ({ isAuth: isAuth }) => {
                       <ReadOnlyRow
                         zawodnik={zawodnik}
                         handleEditClick={handleEditClick3}
+                        isAuth={isAuth}
                       />
                     )}
                   </Fragment>
