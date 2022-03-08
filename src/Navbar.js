@@ -9,7 +9,7 @@ const Navbar = ({ isAuth: isAuth }) => {
         <div className="links">
           <Link to="/nowyTurniej">Nowy turniej</Link>
           <Link to="/rejestracja">Załóż konto</Link>
-          <Link to="/rozpocznijTurniej">Rozpoczte Turnieje</Link>
+          <Link to="/rozpocznijTurniej">Rozpoczete Turnieje</Link>
           <Link to="/rankingElo">Ranking Elo</Link>
         </div>
       </nav>

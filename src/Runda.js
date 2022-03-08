@@ -395,7 +395,9 @@ const Runda = ({ isAuth: isAuth }) => {
             body: JSON.stringify({
               elo: noweElo.toString(),
             }),
-          }).then(() => {});
+          }).then(() => {
+            // historia.push("/turniejeRozpoczete/" + id);
+          });
         }
       });
     };
@@ -908,7 +910,7 @@ const Runda = ({ isAuth: isAuth }) => {
     setEditFormData3(newFormData);
   };
 
-  const zakonczTurniej = () => {};
+  //const zakonczTurniej = () => {};
 
   return (
     <div>
@@ -1067,9 +1069,9 @@ const Runda = ({ isAuth: isAuth }) => {
               <button type="button" onClick={() => zatwierdzR3()}>
                 Zatwierdź runde 3
               </button>
-              <button type="button" onClick={() => zakonczTurniej()}>
+              {/* <button type="button" onClick={() => zakonczTurniej()}>
                 Zakończ Turniej
-              </button>
+              </button> */}
             </div>
           )}
         </article>

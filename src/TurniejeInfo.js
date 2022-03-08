@@ -52,7 +52,6 @@ const TurniejeInfo = ({ isAuth: isAuth }) => {
         }
       }
     });
-
     let r1x = [];
     zawodnik_array.shift();
     zawodnik_array_nazwisko.shift();
