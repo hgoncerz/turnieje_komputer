@@ -13,24 +13,58 @@ const ListaElo = ({ elo, usunTurniej }) => {
   };
   return (
     <div className="listaElo">
-      <h2>ELO ranking zawodników</h2>
+      <h2>Tabela z rankingiem zawodników:</h2>
+      <br></br>
       <button onClick={() => sorting("elo")}>
         Sortowanie według Elo zawodników
       </button>
       <br></br>
+      <br></br>
       <table>
         <tr>
-          <th>Pozycja</th>
-          <th>Imie</th>
-          <th>Nazwisko</th>
-          <th>Elo</th>
+          <th
+            style={{
+              backgroundColor: "#377db8",
+              color: "#ddd",
+              textAlign: "center",
+            }}
+          >
+            Poz.
+          </th>
+          <th
+            style={{
+              backgroundColor: "#377db8",
+              color: "#ddd",
+              textAlign: "center",
+            }}
+          >
+            Imię
+          </th>
+          <th
+            style={{
+              backgroundColor: "#377db8",
+              color: "#ddd",
+              textAlign: "center",
+            }}
+          >
+            Nazwisko
+          </th>
+          <th
+            style={{
+              backgroundColor: "#377db8",
+              color: "#ddd",
+              textAlign: "center",
+            }}
+          >
+            Elo
+          </th>
         </tr>
         {data.map((data) => (
           <tr key={data.id}>
-            <td>{licznik++}</td>
-            <td>{data.imie}</td>
-            <td>{data.nazwisko}</td>
-            <td>{data.elo}</td>
+            <td style={{ textAlign: "center" }}>{licznik++}</td>
+            <td style={{ textAlign: "center" }}>{data.imie}</td>
+            <td style={{ textAlign: "center" }}>{data.nazwisko}</td>
+            <td style={{ textAlign: "center" }}>{data.elo}</td>
           </tr>
         ))}
       </table>

@@ -3,13 +3,25 @@ import React from "react";
 const ReadOnlyRow = ({ zawodnik, handleEditClick, isAuth: isAuth }) => {
   return (
     <tr>
-      <td>{zawodnik.rezultat.wygrany.zawodnik.imie}</td>
-      <td>{zawodnik.rezultat.wygrany.zawodnik.nazwisko}</td>
-      <td>{zawodnik.rezultat.wygrany.punkty}</td>
-      <td>{zawodnik.rezultat.przegrany.zawodnik.imie}</td>
-      <td>{zawodnik.rezultat.przegrany.zawodnik.nazwisko}</td>
-      <td>{zawodnik.rezultat.przegrany.punkty}</td>
-      <td>{zawodnik.rezultat.wynik}</td>
+      <td style={{ textAlign: "center" }}>
+        {zawodnik.rezultat.wygrany.zawodnik.imie}
+      </td>
+      <td style={{ textAlign: "center" }}>
+        {zawodnik.rezultat.wygrany.zawodnik.nazwisko}
+      </td>
+      <td style={{ textAlign: "center" }}>
+        {zawodnik.rezultat.wygrany.punkty}
+      </td>
+      <td style={{ textAlign: "center" }}>
+        {zawodnik.rezultat.przegrany.zawodnik.imie}
+      </td>
+      <td style={{ textAlign: "center" }}>
+        {zawodnik.rezultat.przegrany.zawodnik.nazwisko}
+      </td>
+      <td style={{ textAlign: "center" }}>
+        {zawodnik.rezultat.przegrany.punkty}
+      </td>
+      <td style={{ textAlign: "center" }}>{zawodnik.rezultat.wynik}</td>
       {isAuth && (
         <td>
           <button

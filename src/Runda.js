@@ -432,7 +432,7 @@ const Runda = ({ isAuth: isAuth }) => {
     let zawodnicy2Wygrany = [];
     let zawodnicy2Przegrany = [];
 
-    mecz2.forEach((element) => {
+    mecz3.forEach((element) => {
       punktyR1Wygrany = parseInt(element.rezultat.wygrany.punkty);
       punktyR1Przegrany = parseInt(element.rezultat.przegrany.punkty);
       imieWygrany = element.rezultat.wygrany.zawodnik.imie;
@@ -644,7 +644,7 @@ const Runda = ({ isAuth: isAuth }) => {
     let arrayPrzegraliImie = [];
     let arrayPrzegraliNazwisko = [];
 
-    mecz.forEach((element) => {
+    mecz2.forEach((element) => {
       punktyR1Wygrany = parseInt(element.rezultat.wygrany.punkty);
       punktyR1Przegrany = parseInt(element.rezultat.przegrany.punkty);
       imieWygrany = element.rezultat.wygrany.zawodnik.imie;
@@ -922,18 +922,30 @@ const Runda = ({ isAuth: isAuth }) => {
             Data: {data}, miejsce: {miejsceRank}, grupa: {grupaRank}
           </h3>
           <br></br>
+          <h1>Tabela rundy 1:</h1>
+          <br></br>
           <form onSubmit={handleEditFormSubmit}>
             <table>
               <thead>
-                <tr>
-                  <th>Imie</th>
-                  <th>Nazwisko</th>
-                  <th>Punkty</th>
-                  <th>Imie</th>
-                  <th>Nazwisko</th>
-                  <th>Punkty</th>
-                  <th>Rezultat</th>
-                  {isAuth && <th>Akcja</th>}
+                <tr style={{ backgroundColor: "#377db8" }}>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Imię</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Nazwisko
+                  </th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Punkty</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Imię</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Nazwisko
+                  </th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Punkty</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Rezultat
+                  </th>
+                  {isAuth && (
+                    <th style={{ color: "#ddd", textAlign: "center" }}>
+                      Akcja
+                    </th>
+                  )}
                 </tr>
               </thead>
               <tbody>
@@ -962,11 +974,15 @@ const Runda = ({ isAuth: isAuth }) => {
           {isAuth && (
             <div>
               {" "}
-              <button type="button" onClick={() => zatwierdzR1()}>
-                Zatwierdź runde 1
+              <button
+                type="button"
+                onClick={() => zatwierdzR1()}
+                style={{ marginRight: "15px" }}
+              >
+                Zatwierdź 1 rundę
               </button>
               <button type="button" onClick={() => losowanieR2()}>
-                Wylosuj 2 runde
+                Wylosuj 2 rundę
               </button>
             </div>
           )}
@@ -975,20 +991,30 @@ const Runda = ({ isAuth: isAuth }) => {
       {mecz2 && (
         <article>
           <br></br>
-          <h1>Runda 2</h1>
+          <h1>Tabela rundy 2:</h1>
           <br></br>
           <form onSubmit={handleEditFormSubmit2}>
             <table>
               <thead>
-                <tr>
-                  <th>Imie</th>
-                  <th>Nazwisko</th>
-                  <th>Punkty</th>
-                  <th>Imie</th>
-                  <th>Nazwisko</th>
-                  <th>Punkty</th>
-                  <th>Rezultat</th>
-                  {isAuth && <th>Akcja</th>}
+                <tr style={{ backgroundColor: "#377db8" }}>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Imię</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Nazwisko
+                  </th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Punkty</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Imię</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Nazwisko
+                  </th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Punkty</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Rezultat
+                  </th>
+                  {isAuth && (
+                    <th style={{ color: "#ddd", textAlign: "center" }}>
+                      Akcja
+                    </th>
+                  )}
                 </tr>
               </thead>
               <tbody>
@@ -1014,11 +1040,15 @@ const Runda = ({ isAuth: isAuth }) => {
           <br></br>
           {isAuth && (
             <div>
-              <button type="button" onClick={() => zatwierdzR2()}>
-                Zatwierdź runde 2
+              <button
+                type="button"
+                onClick={() => zatwierdzR2()}
+                style={{ marginRight: "15px" }}
+              >
+                Zatwierdź 2 rundę
               </button>
               <button type="button" onClick={() => losowanieR3()}>
-                Wylosuj 3 runde
+                Wylosuj 3 rundę
               </button>{" "}
             </div>
           )}
@@ -1027,20 +1057,30 @@ const Runda = ({ isAuth: isAuth }) => {
       {mecz3 && (
         <article>
           <br></br>
-          <h1>Runda 3</h1>
+          <h1>Tabela rundy 3:</h1>
           <br></br>
           <form onSubmit={handleEditFormSubmit3}>
             <table>
               <thead>
-                <tr>
-                  <th>Imie</th>
-                  <th>Nazwisko</th>
-                  <th>Punkty</th>
-                  <th>Imie</th>
-                  <th>Nazwisko</th>
-                  <th>Punkty</th>
-                  <th>Rezultat</th>
-                  {isAuth && <th>Akcja</th>}
+                <tr style={{ backgroundColor: "#377db8" }}>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Imię</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Nazwisko
+                  </th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Punkty</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Imię</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Nazwisko
+                  </th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Punkty</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Rezultat
+                  </th>
+                  {isAuth && (
+                    <th style={{ color: "#ddd", textAlign: "center" }}>
+                      Akcja
+                    </th>
+                  )}
                 </tr>
               </thead>
               <tbody>
@@ -1067,7 +1107,7 @@ const Runda = ({ isAuth: isAuth }) => {
           {isAuth && (
             <div>
               <button type="button" onClick={() => zatwierdzR3()}>
-                Zatwierdź runde 3
+                Zatwierdź 3 rundę
               </button>
               {/* <button type="button" onClick={() => zakonczTurniej()}>
                 Zakończ Turniej

@@ -3,7 +3,7 @@ import React from "react";
 const EditableRow = ({ editFormData, handleEditFormChange }) => {
   return (
     <tr>
-      <td>Imie</td>
+      <td>Imię</td>
       <td>Nazwisko</td>
       <td>
         <input
@@ -15,7 +15,7 @@ const EditableRow = ({ editFormData, handleEditFormChange }) => {
           onChange={handleEditFormChange}
         ></input>
       </td>
-      <td>Imie</td>
+      <td>Imię</td>
       <td>Nazwisko</td>
       <td>
         <input

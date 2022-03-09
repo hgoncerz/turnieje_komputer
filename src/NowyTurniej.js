@@ -37,49 +37,66 @@ const NowyTurniej = () => {
   };
   return (
     <div className="nowyTurniej">
-      <h2>Dodaj nowy turniej</h2>
+      <h2>Dodaj nowy turniej:</h2>
+      <br></br>
       <form onSubmit={przyciskFormularza}>
-        <label>Turniej data:</label>
-        <input
-          type="text"
-          required
-          value={data}
-          onChange={(e) => setData(e.target.value)}
-        />
-        <label>Turniej miejsce:</label>
-        <textarea
-          required
-          value={miejsce}
-          onChange={(e) => setMiejsce(e.target.value)}
-        ></textarea>
-        <label>Grupa:</label>
-        <input
-          type="text"
-          required
-          value={grupa}
-          onChange={(e) => setGrupa(e.target.value)}
-        />
-        <label>Turniej kontakt:</label>
-        <textarea
-          required
-          value={kontakt}
-          onChange={(e) => setKontakt(e.target.value)}
-        ></textarea>
-        <label>Turniej maksymalna liczba uczestników:</label>
-        <input
-          type="text"
-          required
-          value={ile}
-          onChange={(e) => setIle(e.target.value)}
-        />
-        <label>Opis Turnieju:</label>
-        <textarea
-          required
-          value={opis_turnieju}
-          onChange={(e) => setOpis_turnieju(e.target.value)}
-        ></textarea>
-
-        <button>Dodaj turniej</button>
+        <div className="form-inner">
+          <div className="form-group">
+            <label>Turniej data:</label>
+            <input
+              type="text"
+              required
+              value={data}
+              onChange={(e) => setData(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label>Turniej miejsce:</label>
+            <textarea
+              required
+              value={miejsce}
+              onChange={(e) => setMiejsce(e.target.value)}
+              spellCheck="false"
+            ></textarea>
+          </div>
+          <div className="form-group">
+            <label>Grupa:</label>
+            <input
+              type="text"
+              required
+              value={grupa}
+              onChange={(e) => setGrupa(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label>Turniej kontakt:</label>
+            <textarea
+              required
+              value={kontakt}
+              onChange={(e) => setKontakt(e.target.value)}
+              spellCheck="false"
+            ></textarea>
+          </div>
+          <div className="form-group">
+            <label>Turniej maksymalna liczba uczestników:</label>
+            <input
+              type="text"
+              required
+              value={ile}
+              onChange={(e) => setIle(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label>Opis turnieju:</label>
+            <textarea
+              required
+              value={opis_turnieju}
+              onChange={(e) => setOpis_turnieju(e.target.value)}
+              spellCheck="false"
+            ></textarea>
+          </div>
+          <button>Dodaj turniej</button>
+        </div>
       </form>
     </div>
   );

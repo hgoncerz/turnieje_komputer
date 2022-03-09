@@ -11,8 +11,9 @@ const LoginForm = ({ Login, error }) => {
   };
   return (
     <form onSubmit={submitHandler}>
+      <h2>Panel logowania administratora:</h2>
+      <br></br>
       <div className="form-inner">
-        <h2>Login</h2>
         {error !== "" ? <div className="error">{error}</div> : ""}
         <div className="form-group">
           <label htmlFor="login">Login:</label>
@@ -34,7 +35,7 @@ const LoginForm = ({ Login, error }) => {
             value={details.haslo}
           ></input>
         </div>
-        <input type="submit" value="Logowanie Administratora" />
+        <input type="submit" value="Logowanie administratora" />
       </div>
     </form>
   );

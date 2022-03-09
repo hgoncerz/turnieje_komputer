@@ -144,7 +144,6 @@ const TurniejeRozpoczete = ({ isAuth: isAuth }) => {
       nowyZawodnik1 = [...zawodnik1];
       console.log("nie dodano bo nie ma w bazie");
     }
-    console.log(zawodnicyBaza);
     setZawodnik1(nowyZawodnik1);
   };
 
@@ -179,12 +178,14 @@ const TurniejeRozpoczete = ({ isAuth: isAuth }) => {
 
     zawodnicyBaza.forEach((element1) => {
       if (
-        element1.imie === imie_array[element1] &&
-        element1.nazwisko === nazwisko_array[element1]
+        imie_array[element1] === element1.imie &&
+        nazwisko_array[element1] === element1.nazwisko
       ) {
         eloZawodnikow2.push(element1.elo);
       }
     });
+
+    console.log(eloZawodnikow2);
 
     for (let i = 0; i < imie_array.length; i++) {
       zawodnik.push({
@@ -234,10 +235,11 @@ const TurniejeRozpoczete = ({ isAuth: isAuth }) => {
   return (
     <div className="turniejeRozpoczete">
       <button onClick={() => setZawodnik1(rozdzielDane())}>
-        Wyświetl turniej tabele wyników
+        Wyświetl tabelę wyników
       </button>
       {zawodnik1 && (
         <article>
+          <br></br>
           <h2>Data: {data}</h2>
           <h2>Miejsce: {miejsce}</h2>
           <h2>Grupa: {grupa}</h2>
@@ -245,25 +247,29 @@ const TurniejeRozpoczete = ({ isAuth: isAuth }) => {
           <form>
             <table>
               <thead>
-                <tr>
-                  <th>Poz.</th>
-                  <th>Imie</th>
-                  <th>Nazwisko</th>
-                  <th>Punkty</th>
-                  <th>Mecze</th>
-                  <th>ELO</th>
-                  {isAuth && <th>Akcja</th>}
+                <tr style={{ backgroundColor: "#377db8" }}>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Poz.</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Imię</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>
+                    Nazwisko
+                  </th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Punkty</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>Mecze</th>
+                  <th style={{ color: "#ddd", textAlign: "center" }}>ELO</th>
+                  {isAuth && <th style={{ color: "#ddd" }}>Akcja</th>}
                 </tr>
               </thead>
               <tbody>
                 {zawodnik1.map((zawodnik) => (
                   <tr>
-                    <td>{licznik++}</td>
-                    <td>{zawodnik.imie}</td>
-                    <td>{zawodnik.nazwisko}</td>
-                    <td>{zawodnik.punkty}</td>
-                    <td>{zawodnik.ilosc_meczy}</td>
-                    <td>{zawodnik.elo}</td>
+                    <td style={{ textAlign: "center" }}>{licznik++}</td>
+                    <td style={{ textAlign: "center" }}>{zawodnik.imie}</td>
+                    <td style={{ textAlign: "center" }}>{zawodnik.nazwisko}</td>
+                    <td style={{ textAlign: "center" }}>{zawodnik.punkty}</td>
+                    <td style={{ textAlign: "center" }}>
+                      {zawodnik.ilosc_meczy}
+                    </td>
+                    <td style={{ textAlign: "center" }}>{zawodnik.elo}</td>
                     {isAuth && (
                       <td>
                         <button
@@ -281,25 +287,36 @@ const TurniejeRozpoczete = ({ isAuth: isAuth }) => {
           </form>
           {isAuth && (
             <div>
-              <h2>Dodaj nowego uczestnika</h2>
-              <a>Użytkownik musi być w bazie zawodników</a>
+              <h2>Dodaj nowego uczestnika:</h2>
+              <a>Użytkownik musi być w bazie zawodników.</a>
+              <br></br>
               <form onSubmit={handleAddFormSubmit}>
-                <input
-                  type="text"
-                  name="imie"
-                  required="required"
-                  placeholder="Wprowadź imie"
-                  onChange={handleAddFormChange}
-                ></input>
-                <input
-                  type="text"
-                  name="nazwisko"
-                  required="required"
-                  placeholder="Wprowadź nazwisko"
-                  onChange={handleAddFormChange}
-                ></input>
-                <button type="submit">Dodaj</button>
+                <div className="form-inner">
+                  <div className="form-group">
+                    <label>Imię:</label>
+                    <input
+                      type="text"
+                      name="imie"
+                      required="required"
+                      placeholder="Wprowadź imię"
+                      onChange={handleAddFormChange}
+                    ></input>
+                  </div>
+                  <div className="form-group">
+                    <label>Nazwisko:</label>
+                    <input
+                      type="text"
+                      name="nazwisko"
+                      required="required"
+                      placeholder="Wprowadź nazwisko"
+                      onChange={handleAddFormChange}
+                    ></input>
+                  </div>
+                  <button type="submit">Dodaj zawodnika</button>
+                </div>
               </form>
+
+              <br></br>
               <button type="button" onClick={() => losowanieR1()}>
                 Wylosuj pary
               </button>

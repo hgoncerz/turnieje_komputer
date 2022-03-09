@@ -40,18 +40,21 @@ const TurniejeInfo = ({ isAuth: isAuth }) => {
     let r1Tym = [];
 
     //wyszukanie elo zawodnika po liscie startowej z bazy zawodnicy
-    const sprawdzenie = array1.map(function (zawodnik) {
-      for (let i = 1; i <= zawodnik_array.length; i++) {
+    for (let i = 1; i <= zawodnik_array.length; i++) {
+      array1.map(function (zawodnik) {
         if (
           zawodnik_array[i] === zawodnik.imie &&
           zawodnik_array_nazwisko[i] === zawodnik.nazwisko
         ) {
+          console.log(zawodnik.imie);
+          console.log(zawodnik.nazwisko);
+          console.log(zawodnik.elo);
           eloTymczasowe.push(zawodnik.elo);
           punktyTym.push("0");
           ilosc_meczyTym.push("0");
         }
-      }
-    });
+      });
+    }
     let r1x = [];
     zawodnik_array.shift();
     zawodnik_array_nazwisko.shift();
@@ -198,12 +201,12 @@ const TurniejeInfo = ({ isAuth: isAuth }) => {
           <h2>Miejsce: {turniej.miejsce}</h2>
           <h2>Grupa: {turniej.grupa}</h2>
           <div>Kontakt: {turniej.kontakt}</div>
-          <div>Ilosc maksymalna uczestnikow: {turniej.ile}</div>
+          <div>Ilość maksymalna uczestników: {turniej.ile}</div>
           <div>Opis Turnieju: {turniej.opis_turnieju}</div>
 
           {isAuth && (
             <div>
-              <button onClick={usunTurniej}>usuń turniej</button>
+              <button onClick={usunTurniej}>Usuń turniej</button>
               <br></br>
               <br></br>
               <button onClick={rozpocznijTurniej}>Rozpocznij Turniej</button>
@@ -212,33 +215,35 @@ const TurniejeInfo = ({ isAuth: isAuth }) => {
 
           <h2>Zapisz się do turnieju:</h2>
           <form onSubmit={przyciskZapisz}>
-            <label>Imie</label>
-            <br></br>
-            <input
-              type="text"
-              required
-              value={imie}
-              onChange={(e) => setImie(e.target.value)}
-            />
-            <br></br>
-            <label>Nazwisko</label>
-            <br></br>
-            <input
-              required
-              value={nazwisko}
-              onChange={(e) => setNazwisko(e.target.value)}
-            ></input>
-            <br></br>
-            <label>Hasło</label>
-            <br></br>
-            <input
-              type="password"
-              required
-              value={haslo}
-              onChange={(e) => setHaslo(e.target.value)}
-            ></input>
-            <br></br>
-            <button>Zapisz się</button>
+            <div className="form-inner">
+              <div className="form-group">
+                <label>Imię:</label>
+                <input
+                  type="text"
+                  required
+                  value={imie}
+                  onChange={(e) => setImie(e.target.value)}
+                />
+              </div>
+              <div className="form-group">
+                <label>Nazwisko:</label>
+                <input
+                  required
+                  value={nazwisko}
+                  onChange={(e) => setNazwisko(e.target.value)}
+                ></input>
+              </div>
+              <div className="form-group">
+                <label>Hasło:</label>
+                <input
+                  type="password"
+                  required
+                  value={haslo}
+                  onChange={(e) => setHaslo(e.target.value)}
+                ></input>
+              </div>
+              <button>Zapisz się</button>
+            </div>
           </form>
         </article>
       )}

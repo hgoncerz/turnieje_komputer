@@ -27,7 +27,7 @@ const WyswietlZawodnikow = () => {
   };
 
   const WyswietlZaw = () => {
-    setWyswietlListe("Lista Startowa");
+    setWyswietlListe("Lista startowa:");
     arrayImiona = imieZaw.split(" ");
     arrayNazwiska = nazwiskoZaw.split(" ");
     console.log(arrayNazwiska);
@@ -35,18 +35,18 @@ const WyswietlZawodnikow = () => {
     for (let i = 1; i < arrayImiona.length; i++) {
       if (i == 1) {
         arLista.push(
-          <tr>
-            <th>LP</th>
-            <th>Imie</th>
-            <th>Nazwisko</th>
+          <tr style={{ backgroundColor: "#377db8" }}>
+            <th style={{ color: "#ddd", textAlign: "center" }}>LP</th>
+            <th style={{ color: "#ddd", textAlign: "center" }}>Imię</th>
+            <th style={{ color: "#ddd", textAlign: "center" }}>Nazwisko</th>
           </tr>
         );
       }
       arLista.push(
         <tr>
-          <td>{i}</td>
-          <td>{arrayImiona[i]}</td>
-          <td>{arrayNazwiska[i]}</td>
+          <td style={{ textAlign: "center" }}>{i}</td>
+          <td style={{ textAlign: "center" }}>{arrayImiona[i]}</td>
+          <td style={{ textAlign: "center" }}>{arrayNazwiska[i]}</td>
         </tr>
       );
     }
@@ -56,15 +56,16 @@ const WyswietlZawodnikow = () => {
   return (
     <div>
       <br></br>
-      <button onClick={WyswietlZaw}>Wyswietl Zawodnikow</button>
+      <button onClick={WyswietlZaw}>Wyświetl Zawodników</button>
       <br></br>
       <h1>{wyswietlListe}</h1>
       <div id="div1">
         <table>{lista}</table>
       </div>
       <br></br>
-      {lista && ( <button onClick={printContent}>Wydrukuj liste zawodnikow</button>)}
-      
+      {lista && (
+        <button onClick={printContent}>Wydrukuj listę zawodników</button>
+      )}
     </div>
   );
 };

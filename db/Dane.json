@@ -47,26 +47,86 @@
   ],
   "rozpoczety_Turniej": [
     {
-      "imie": " Bartek Klaudia",
-      "nazwisko": " Barak Derbot",
-      "punkty": "15 0",
-      "ilosc_meczy": "3 3",
+      "imie": " Marcin Hubert Michal Ela Grzegorz Bartek Adam Kamil",
+      "nazwisko": " Tomczyk Goncerz Lazak Skilt Kurkiew Barak Małysz Stoch",
+      "punkty": "4 4 2 5 4 0 3 2",
+      "ilosc_meczy": "2 2 2 2 2 2 2 2",
       "r1": [
         {
           "id": 0,
           "rezultat": {
-            "wynik": "6;3 6;3",
+            "wynik": "-",
             "wygrany": {
               "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
+                "imie": "Marcin",
+                "nazwisko": "Tomczyk"
+              },
+              "punkty": "2"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Grzegorz",
+                "nazwisko": "Kurkiew"
+              },
+              "punkty": "1"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Hubert",
+                "nazwisko": "Goncerz"
               },
               "punkty": "3"
             },
             "przegrany": {
               "zawodnik": {
-                "imie": "Klaudia",
-                "nazwisko": "Derbot"
+                "imie": "Bartek",
+                "nazwisko": "Barak"
+              },
+              "punkty": "0"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Michal",
+                "nazwisko": "Lazak"
+              },
+              "punkty": "1"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Adam",
+                "nazwisko": "Małysz"
+              },
+              "punkty": "2"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Ela",
+                "nazwisko": "Skilt"
+              },
+              "punkty": "3"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Kamil",
+                "nazwisko": "Stoch"
               },
               "punkty": "0"
             }
@@ -77,20 +137,80 @@
         {
           "id": 0,
           "rezultat": {
-            "wynik": "6;2 6;2",
+            "wynik": "-",
             "wygrany": {
               "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
+                "imie": "Marcin",
+                "nazwisko": "Tomczyk"
+              },
+              "punkty": "2"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Hubert",
+                "nazwisko": "Goncerz"
+              },
+              "punkty": "1"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Adam",
+                "nazwisko": "Małysz"
+              },
+              "punkty": "1"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Ela",
+                "nazwisko": "Skilt"
+              },
+              "punkty": "2"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Grzegorz",
+                "nazwisko": "Kurkiew"
               },
               "punkty": "3"
             },
             "przegrany": {
               "zawodnik": {
-                "imie": "Klaudia",
-                "nazwisko": "Derbot"
+                "imie": "Bartek",
+                "nazwisko": "Barak"
               },
               "punkty": "0"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Michal",
+                "nazwisko": "Lazak"
+              },
+              "punkty": "1"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Kamil",
+                "nazwisko": "Stoch"
+              },
+              "punkty": "2"
             }
           }
         }
@@ -99,262 +219,11 @@
         {
           "id": 0,
           "rezultat": {
-            "wynik": "6;3 6;3",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
-              },
-              "punkty": "3"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Klaudia",
-                "nazwisko": "Derbot"
-              },
-              "punkty": "0"
-            }
-          }
-        }
-      ],
-      "eloZawodnikow": "1131 1184",
-      "data": "27.01.2022",
-      "miejsce": "Zabrze",
-      "grupa": "800",
-      "id": 29
-    },
-    {
-      "imie": " Michał Grzegorz Michal Hubert Marcin Jan",
-      "nazwisko": " Kozak Kurkiew Lazak Goncerz Tomczyk Matejko",
-      "punkty": "3 0 1 0 3 2",
-      "ilosc_meczy": "1 1 1 1 1 1",
-      "r1": [
-        {
-          "id": 0,
-          "rezultat": {
-            "wynik": "6;3 6;5",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Michał",
-                "nazwisko": "Kozak"
-              },
-              "punkty": "3"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "0"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "2;6 4;6",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Grzegorz",
-                "nazwisko": "Kurkiew"
-              },
-              "punkty": "0"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Marcin",
-                "nazwisko": "Tomczyk"
-              },
-              "punkty": "3"
-            }
-          }
-        },
-        {
-          "id": 2,
-          "rezultat": {
-            "wynik": "6;5 5;6 6/10",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
-              },
-              "punkty": "1"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Jan",
-                "nazwisko": "Matejko"
-              },
-              "punkty": "2"
-            }
-          }
-        }
-      ],
-      "r2": [
-        {
-          "id": 0,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Michał",
-                "nazwisko": "Kozak"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Marcin",
-                "nazwisko": "Tomczyk"
-              },
-              "punkty": "-"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Jan",
-                "nazwisko": "Matejko"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "-"
-            }
-          }
-        },
-        {
-          "id": 2,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Grzegorz",
-                "nazwisko": "Kurkiew"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
-              },
-              "punkty": "-"
-            }
-          }
-        }
-      ],
-      "r3": "",
-      "eloZawodnikow": "1221 900 1000 900 1000 900",
-      "data": "25.01.2022",
-      "miejsce": "Katowice",
-      "grupa": "900",
-      "id": 30
-    },
-    {
-      "imie": " Marcin Hubert Michal Ela Grzegorz Bartek",
-      "nazwisko": " Tomczyk Goncerz Lazak Skilt Kurkiew Barak",
-      "punkty": "3 2 0 0 1 3",
-      "ilosc_meczy": "1 1 1 1 1 1",
-      "r1": [
-        {
-          "id": 0,
-          "rezultat": {
-            "wynik": "6:3 6:5",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Marcin",
-                "nazwisko": "Tomczyk"
-              },
-              "punkty": "3"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Ela",
-                "nazwisko": "Skilt"
-              },
-              "punkty": "0"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "6;4 5/6 10/5",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "2"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Grzegorz",
-                "nazwisko": "Kurkiew"
-              },
-              "punkty": "1"
-            }
-          }
-        },
-        {
-          "id": 2,
-          "rezultat": {
-            "wynik": "5;6 5;6",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
-              },
-              "punkty": "0"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
-              },
-              "punkty": "3"
-            }
-          }
-        }
-      ],
-      "r2": [
-        {
-          "id": 0,
-          "rezultat": {
             "wynik": "-",
             "wygrany": {
               "zawodnik": {
                 "imie": "Marcin",
                 "nazwisko": "Tomczyk"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "-"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
               },
               "punkty": "-"
             },
@@ -368,13 +237,53 @@
           }
         },
         {
-          "id": 2,
+          "id": 1,
           "rezultat": {
             "wynik": "-",
             "wygrany": {
               "zawodnik": {
                 "imie": "Grzegorz",
                 "nazwisko": "Kurkiew"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Kamil",
+                "nazwisko": "Stoch"
+              },
+              "punkty": "-"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Hubert",
+                "nazwisko": "Goncerz"
+              },
+              "punkty": "-"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Adam",
+                "nazwisko": "Małysz"
+              },
+              "punkty": "-"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
+                "imie": "Bartek",
+                "nazwisko": "Barak"
               },
               "punkty": "-"
             },
@@ -388,425 +297,16 @@
           }
         }
       ],
-      "r3": "",
-      "eloZawodnikow": "1203 981 896 981 919 900",
+      "eloZawodnikow": "1120 939 860 916 979 1030 778 859",
       "data": "02.03.2022",
       "miejsce": "SCS Sokół Chorzów",
       "grupa": "800",
-      "id": 34
-    },
-    {
-      "imie": " Marcin Hubert Michal Ela Grzegorz Bartek",
-      "nazwisko": " Tomczyk Goncerz Lazak Skilt Kurkiew Barak",
-      "punkty": "3 2 0 0 1 3",
-      "ilosc_meczy": "1 1 1 1 1 1",
-      "r1": [
-        {
-          "id": 0,
-          "rezultat": {
-            "wynik": "6;3 6;5",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Marcin",
-                "nazwisko": "Tomczyk"
-              },
-              "punkty": "3"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Ela",
-                "nazwisko": "Skilt"
-              },
-              "punkty": "0"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "6;4 5;6 10/5",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "2"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Grzegorz",
-                "nazwisko": "Kurkiew"
-              },
-              "punkty": "1"
-            }
-          }
-        },
-        {
-          "id": 2,
-          "rezultat": {
-            "wynik": "5;6 5;6",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
-              },
-              "punkty": "0"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
-              },
-              "punkty": "3"
-            }
-          }
-        }
-      ],
-      "r2": [
-        {
-          "id": 0,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Marcin",
-                "nazwisko": "Tomczyk"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "-"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Ela",
-                "nazwisko": "Skilt"
-              },
-              "punkty": "-"
-            }
-          }
-        },
-        {
-          "id": 2,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Grzegorz",
-                "nazwisko": "Kurkiew"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
-              },
-              "punkty": "-"
-            }
-          }
-        }
-      ],
-      "r3": "",
-      "eloZawodnikow": "1207 967 892 1010 946 873",
-      "data": "02.03.2022",
-      "miejsce": "SCS Sokół Chorzów",
-      "grupa": "800",
-      "id": 31
-    },
-    {
-      "imie": " Marcin Hubert Michal Ela Grzegorz Bartek",
-      "nazwisko": " Tomczyk Goncerz Lazak Skilt Kurkiew Barak",
-      "punkty": "0 0 0 0 0 0",
-      "ilosc_meczy": "0 0 0 0 0 0",
-      "r1": [
-        {
-          "id": 0,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Marcin",
-                "nazwisko": "Tomczyk"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Ela",
-                "nazwisko": "Skilt"
-              },
-              "punkty": "-"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Grzegorz",
-                "nazwisko": "Kurkiew"
-              },
-              "punkty": "-"
-            }
-          }
-        },
-        {
-          "id": 2,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
-              },
-              "punkty": "-"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
-              },
-              "punkty": "-"
-            }
-          }
-        }
-      ],
-      "r2": "",
-      "r3": "",
-      "eloZawodnikow": "1207 967 892 1010 946 873",
-      "data": "02.03.2022",
-      "miejsce": "SCS Sokół Chorzów",
-      "grupa": "800",
-      "id": 33
-    },
-    {
-      "imie": " Marcin Hubert Michal Ela Grzegorz Bartek",
-      "nazwisko": " Tomczyk Goncerz Lazak Skilt Kurkiew Barak",
-      "punkty": "6 5 6 1 0 9",
-      "ilosc_meczy": "3 3 3 3 3 3",
-      "r1": [
-        {
-          "id": 0,
-          "rezultat": {
-            "wynik": "6;3 4;6 10/6",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Marcin",
-                "nazwisko": "Tomczyk"
-              },
-              "punkty": "2"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Ela",
-                "nazwisko": "Skilt"
-              },
-              "punkty": "1"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "6:3 6:4",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "3"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Grzegorz",
-                "nazwisko": "Kurkiew"
-              },
-              "punkty": "0"
-            }
-          }
-        },
-        {
-          "id": 2,
-          "rezultat": {
-            "wynik": "2;6 2;6 ",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
-              },
-              "punkty": "0"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
-              },
-              "punkty": "3"
-            }
-          }
-        }
-      ],
-      "r2": [
-        {
-          "id": 0,
-          "rezultat": {
-            "wynik": "6;3 4;6 10/1",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Marcin",
-                "nazwisko": "Tomczyk"
-              },
-              "punkty": "2"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "1"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "6;3 6;3",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
-              },
-              "punkty": "3"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Ela",
-                "nazwisko": "Skilt"
-              },
-              "punkty": "0"
-            }
-          }
-        },
-        {
-          "id": 2,
-          "rezultat": {
-            "wynik": "2;6 4;6",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Grzegorz",
-                "nazwisko": "Kurkiew"
-              },
-              "punkty": "0"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
-              },
-              "punkty": "3"
-            }
-          }
-        }
-      ],
-      "r3": [
-        {
-          "id": 0,
-          "rezultat": {
-            "wynik": "6;5 6;5",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Marcin",
-                "nazwisko": "Tomczyk"
-              },
-              "punkty": "3"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "0"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "5;6 6;5 6/10",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
-              },
-              "punkty": "1"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Ela",
-                "nazwisko": "Skilt"
-              },
-              "punkty": "2"
-            }
-          }
-        },
-        {
-          "id": 2,
-          "rezultat": {
-            "wynik": "2;6 2;6",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Grzegorz",
-                "nazwisko": "Kurkiew"
-              },
-              "punkty": "0"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
-              },
-              "punkty": "3"
-            }
-          }
-        }
-      ],
-      "eloZawodnikow": "1211 954 888 1023 958 861",
-      "data": "02.03.2022",
-      "miejsce": "SCS Sokół Chorzów",
-      "grupa": "800",
-      "id": 35
+      "id": 1
     },
     {
       "imie": " Marcin Hubert Michal Ela Grzegorz Bartek Adam Kamil",
       "nazwisko": " Tomczyk Goncerz Lazak Skilt Kurkiew Barak Małysz Stoch",
-      "punkty": "9 5 0 10 6 4 3 11",
+      "punkty": "6 1 6 3 7 4 3 6",
       "ilosc_meczy": "3 3 3 3 3 3 3 3",
       "r1": [
         {
@@ -818,14 +318,14 @@
                 "imie": "Marcin",
                 "nazwisko": "Tomczyk"
               },
-              "punkty": "3"
+              "punkty": "2"
             },
             "przegrany": {
               "zawodnik": {
                 "imie": "Grzegorz",
                 "nazwisko": "Kurkiew"
               },
-              "punkty": "0"
+              "punkty": "1"
             }
           }
         },
@@ -838,14 +338,14 @@
                 "imie": "Hubert",
                 "nazwisko": "Goncerz"
               },
-              "punkty": "2"
+              "punkty": "1"
             },
             "przegrany": {
               "zawodnik": {
                 "imie": "Bartek",
                 "nazwisko": "Barak"
               },
-              "punkty": "1"
+              "punkty": "2"
             }
           }
         },
@@ -858,14 +358,14 @@
                 "imie": "Michal",
                 "nazwisko": "Lazak"
               },
-              "punkty": "0"
+              "punkty": "3"
             },
             "przegrany": {
               "zawodnik": {
                 "imie": "Adam",
                 "nazwisko": "Małysz"
               },
-              "punkty": "3"
+              "punkty": "0"
             }
           }
         },
@@ -878,14 +378,14 @@
                 "imie": "Ela",
                 "nazwisko": "Skilt"
               },
-              "punkty": "1"
+              "punkty": "0"
             },
             "przegrany": {
               "zawodnik": {
                 "imie": "Kamil",
                 "nazwisko": "Stoch"
               },
-              "punkty": "2"
+              "punkty": "3"
             }
           }
         }
@@ -904,8 +404,8 @@
             },
             "przegrany": {
               "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
+                "imie": "Bartek",
+                "nazwisko": "Barak"
               },
               "punkty": "1"
             }
@@ -917,17 +417,17 @@
             "wynik": "-",
             "wygrany": {
               "zawodnik": {
-                "imie": "Adam",
-                "nazwisko": "Małysz"
+                "imie": "Michal",
+                "nazwisko": "Lazak"
               },
-              "punkty": "0"
+              "punkty": "1"
             },
             "przegrany": {
               "zawodnik": {
                 "imie": "Kamil",
                 "nazwisko": "Stoch"
               },
-              "punkty": "3"
+              "punkty": "2"
             }
           }
         },
@@ -940,14 +440,14 @@
                 "imie": "Grzegorz",
                 "nazwisko": "Kurkiew"
               },
-              "punkty": "2"
+              "punkty": "3"
             },
             "przegrany": {
               "zawodnik": {
-                "imie": "Bartek",
-                "nazwisko": "Barak"
+                "imie": "Hubert",
+                "nazwisko": "Goncerz"
               },
-              "punkty": "1"
+              "punkty": "0"
             }
           }
         },
@@ -957,8 +457,8 @@
             "wynik": "-",
             "wygrany": {
               "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
+                "imie": "Adam",
+                "nazwisko": "Małysz"
               },
               "punkty": "0"
             },
@@ -982,39 +482,19 @@
                 "imie": "Marcin",
                 "nazwisko": "Tomczyk"
               },
-              "punkty": "0"
-            },
-            "przegrany": {
-              "zawodnik": {
-                "imie": "Hubert",
-                "nazwisko": "Goncerz"
-              },
-              "punkty": "3"
-            }
-          }
-        },
-        {
-          "id": 1,
-          "rezultat": {
-            "wynik": "-",
-            "wygrany": {
-              "zawodnik": {
-                "imie": "Adam",
-                "nazwisko": "Małysz"
-              },
-              "punkty": "3"
+              "punkty": "2"
             },
             "przegrany": {
               "zawodnik": {
                 "imie": "Kamil",
                 "nazwisko": "Stoch"
               },
-              "punkty": "0"
+              "punkty": "1"
             }
           }
         },
         {
-          "id": 2,
+          "id": 1,
           "rezultat": {
             "wynik": "-",
             "wygrany": {
@@ -1026,10 +506,30 @@
             },
             "przegrany": {
               "zawodnik": {
+                "imie": "Ela",
+                "nazwisko": "Skilt"
+              },
+              "punkty": "0"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "rezultat": {
+            "wynik": "-",
+            "wygrany": {
+              "zawodnik": {
                 "imie": "Bartek",
                 "nazwisko": "Barak"
               },
-              "punkty": "0"
+              "punkty": "1"
+            },
+            "przegrany": {
+              "zawodnik": {
+                "imie": "Michal",
+                "nazwisko": "Lazak"
+              },
+              "punkty": "2"
             }
           }
         },
@@ -1039,26 +539,26 @@
             "wynik": "-",
             "wygrany": {
               "zawodnik": {
-                "imie": "Michal",
-                "nazwisko": "Lazak"
+                "imie": "Hubert",
+                "nazwisko": "Goncerz"
               },
-              "punkty": "3"
+              "punkty": "0"
             },
             "przegrany": {
               "zawodnik": {
-                "imie": "Ela",
-                "nazwisko": "Skilt"
+                "imie": "Adam",
+                "nazwisko": "Małysz"
               },
-              "punkty": "0"
+              "punkty": "3"
             }
           }
         }
       ],
-      "eloZawodnikow": "1221 909 917 1001 1003 844 800 800",
+      "eloZawodnikow": "1145 942 813 948 1002 979 777 875",
       "data": "02.03.2022",
       "miejsce": "SCS Sokół Chorzów",
       "grupa": "800",
-      "id": 36
+      "id": 2
     }
   ],
   "zawodnicy": [
@@ -1066,7 +566,7 @@
       "imie": "Bartek",
       "nazwisko": "Barak",
       "haslo": "obama",
-      "elo": "1126",
+      "elo": "962",
       "id": 1
     },
     {
@@ -1122,49 +622,49 @@
       "imie": "Grzegorz",
       "nazwisko": "Kurkiew",
       "haslo": "kurkiew",
-      "elo": "970",
+      "elo": "1017",
       "id": 9
     },
     {
       "imie": "Michal",
       "nazwisko": "Lazak",
       "haslo": "lazak",
-      "elo": "848",
+      "elo": "836",
       "id": 10
     },
     {
       "imie": "Hubert",
       "nazwisko": "Goncerz",
       "haslo": "goncerz",
-      "elo": "982",
+      "elo": "896",
       "id": 11
     },
     {
       "imie": "Marcin",
       "nazwisko": "Tomczyk",
       "haslo": "tomczyk",
-      "elo": "1056",
+      "elo": "1168",
       "id": 12
     },
     {
       "imie": "Ela",
       "nazwisko": "Skilt",
       "haslo": "skilt",
-      "elo": "876",
+      "elo": "926",
       "id": 13
     },
     {
       "imie": "Adam",
       "nazwisko": "Małysz",
       "haslo": "malysz",
-      "elo": "778",
+      "elo": "777",
       "id": 14
     },
     {
       "imie": "Kamil",
       "nazwisko": "Stoch",
       "haslo": "stoch",
-      "elo": "859",
+      "elo": "899",
       "id": 15
     }
   ],

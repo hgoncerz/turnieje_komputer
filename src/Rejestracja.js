@@ -48,50 +48,57 @@ const Rejestracja = () => {
   };
   return (
     <div className="nowyTurniej">
-      <h2>Zarejestruj się</h2>
+      <h2>Zarejestruj się:</h2>
       <br></br>
-      <a>Rejestracja jest wymagana do wzięcia udziału w turnieju</a>
+      <a>Rejestracja jest wymagana do wzięcia udziału w turnieju.</a>
 
       <form onSubmit={przyciskZarejestruj}>
-        <br></br>
-        <lable>Jak oceniasz swój poziom gry?</lable>
-        <select
-          className="select-elo"
-          required
-          onChange={(e) => {
-            let selectElo = e.target.value;
-            setElo(selectElo);
-          }}
-        >
-          <option value="800">Początkujący</option>
-          <option value="1000">zaawansowany</option>
-          <option value="900">średniozaawansowany</option>
-        </select>
-        <br></br>
-        <br></br>
-        <label>Imie:</label>
-        <input
-          type="text"
-          required
-          value={imie}
-          onChange={(e) => setImie(e.target.value)}
-        />
-        <label>Nazwisko:</label>
-        <input
-          type="text"
-          required
-          value={nazwisko}
-          onChange={(e) => setNazwisko(e.target.value)}
-        />
-        <label>Hasło:</label>
-        <input
-          type="password"
-          required
-          value={haslo}
-          onChange={(e) => setHaslo(e.target.value)}
-        />
-
-        <button>Dodaj Zawodnika</button>
+        <div className="form-inner">
+          <br></br>
+          <lable>Jak oceniasz swój poziom gry?</lable>
+          <select
+            className="select-elo"
+            required
+            onChange={(e) => {
+              let selectElo = e.target.value;
+              setElo(selectElo);
+            }}
+          >
+            <option value="800">Początkujący</option>
+            <option value="1000">zaawansowany</option>
+            <option value="900">średniozaawansowany</option>
+          </select>
+          <br></br>
+          <br></br>
+          <div className="form-group">
+            <label>Imię:</label>
+            <input
+              type="text"
+              required
+              value={imie}
+              onChange={(e) => setImie(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label>Nazwisko:</label>
+            <input
+              type="text"
+              required
+              value={nazwisko}
+              onChange={(e) => setNazwisko(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label>Hasło:</label>
+            <input
+              type="password"
+              required
+              value={haslo}
+              onChange={(e) => setHaslo(e.target.value)}
+            />
+          </div>
+          <button>Dołącz do systemu</button>
+        </div>
       </form>
     </div>
   );

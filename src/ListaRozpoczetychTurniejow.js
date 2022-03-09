@@ -7,7 +7,7 @@ const ListaRozpoczetychTurniejow = ({ rozpoczeteTurnieje, usunTurniej }) => {
           <Link to={`/turniejeRozpoczete/${turniej.id}`}>
             <h3>Data: {turniej.data}</h3>
             <h2>Miejsce: {turniej.miejsce}</h2>
-            <h2>Grupa Zaawansowania: {turniej.grupa}</h2>
+            <h2>Grupa zaawansowania: {turniej.grupa}</h2>
           </Link>
         </div>
       ))}
